@@ -1,0 +1,30 @@
+[
+ {
+  "slug": "junktris",
+  "title": "Junktris",
+  "built_with": [
+   "Claude"
+  ],
+  "owner": "Brandon Mau",
+  "status": "Case study coming soon",
+  "summary": "A single-file playable HTML game (version V60), currently being prepared for the Google Play Store.",
+  "play_url": "",
+  "prompts": "",
+  "iterations": "",
+  "tools": ""
+ },
+ {
+  "slug": "pondborn",
+  "title": "Pondborn",
+  "built_with": [
+   "Claude"
+  ],
+  "owner": "Brandon Mau",
+  "status": "Case study coming soon",
+  "summary": "Details coming soon.",
+  "play_url": "",
+  "prompts": "",
+  "iterations": "",
+  "tools": ""
+ }
+]

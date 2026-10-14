@@ -1,0 +1,1083 @@
+[
+ {
+  "slug": "chatgpt",
+  "name": "ChatGPT",
+  "maker": "OpenAI",
+  "category": "ai",
+  "platforms": [
+   "Web",
+   "Windows",
+   "Mac",
+   "Mobile"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://chatgpt.com/",
+  "blurb": "General-purpose AI assistant that can brainstorm game ideas, write and debug code, and draft dialogue or design docs.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "claude",
+  "name": "Claude",
+  "maker": "Anthropic",
+  "category": "ai",
+  "platforms": [
+   "Web",
+   "Windows",
+   "Mac",
+   "Mobile"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://claude.ai/",
+  "blurb": "AI assistant strong at long code files; its Artifacts feature can produce small playable browser games from a prompt.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "grok",
+  "name": "Grok",
+  "maker": "xAI",
+  "category": "ai",
+  "platforms": [
+   "Web",
+   "Mobile"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://grok.com/",
+  "blurb": "xAI's assistant for brainstorming, coding help and quick prototype generation.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "gemini",
+  "name": "Gemini",
+  "maker": "Google",
+  "category": "ai",
+  "platforms": [
+   "Web",
+   "Mobile"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://gemini.google.com/",
+  "blurb": "Google's multimodal assistant; Canvas mode can build and preview simple web games.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "claude-code",
+  "name": "Claude Code",
+  "maker": "Anthropic",
+  "category": "ai",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://www.anthropic.com/claude-code",
+  "blurb": "Agentic coding tool in your terminal that edits whole game projects, runs builds and fixes errors.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "openai-codex",
+  "name": "OpenAI Codex",
+  "maker": "OpenAI",
+  "category": "ai",
+  "platforms": [
+   "Web",
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://openai.com/codex/",
+  "blurb": "OpenAI's coding agent for writing, refactoring and testing game code across a repository.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "cursor",
+  "name": "Cursor",
+  "maker": "Anysphere",
+  "category": "ai",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://cursor.com/",
+  "blurb": "AI-first code editor popular for 'vibe coding' games in Godot, Unity or JavaScript.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "github-copilot",
+  "name": "GitHub Copilot",
+  "maker": "GitHub",
+  "category": "ai",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://github.com/features/copilot",
+  "blurb": "AI pair programmer inside VS Code and other editors for game scripting.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "meshy",
+  "name": "Meshy",
+  "maker": "Meshy",
+  "category": "ai",
+  "platforms": [
+   "Web"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.meshy.ai/",
+  "blurb": "Generates textured 3D models from text or images, handy for placeholder or stylized game assets.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "tripo",
+  "name": "Tripo",
+  "maker": "VAST",
+  "category": "ai",
+  "platforms": [
+   "Web"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.tripo3d.ai/",
+  "blurb": "Text- and image-to-3D model generator with export to common game formats.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "suno",
+  "name": "Suno",
+  "maker": "Suno",
+  "category": "ai",
+  "platforms": [
+   "Web",
+   "Mobile"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://suno.com/",
+  "blurb": "Creates full songs from text prompts; check the plan terms before using tracks commercially.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "elevenlabs",
+  "name": "ElevenLabs",
+  "maker": "ElevenLabs",
+  "category": "ai",
+  "platforms": [
+   "Web"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://elevenlabs.io/",
+  "blurb": "AI voice generation and sound effects for character dialogue and prototypes.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "scenario",
+  "name": "Scenario",
+  "maker": "Scenario",
+  "category": "ai",
+  "platforms": [
+   "Web"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://www.scenario.com/",
+  "blurb": "AI image generation tuned for consistent game art styles and asset sets.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "godot-engine",
+  "name": "Godot Engine",
+  "maker": "Godot Foundation",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux",
+   "Web"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://godotengine.org/",
+  "blurb": "Free, MIT-licensed 2D/3D engine with a lightweight editor and Python-like GDScript.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "unity",
+  "name": "Unity",
+  "maker": "Unity Technologies",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://unity.com/",
+  "blurb": "Widely used C# engine for mobile, PC, console and XR games, with a huge asset store.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "unreal-engine",
+  "name": "Unreal Engine",
+  "maker": "Epic Games",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "advanced",
+  "url": "https://www.unrealengine.com/",
+  "blurb": "High-end 3D engine with Blueprints visual scripting and C++; royalty applies above a revenue threshold.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "gamemaker",
+  "name": "GameMaker",
+  "maker": "GameMaker (Opera)",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://gamemaker.io/",
+  "blurb": "Classic 2D engine behind many indie hits, free for non-commercial use.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "defold",
+  "name": "Defold",
+  "maker": "Defold Foundation",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "intermediate",
+  "url": "https://defold.com/",
+  "blurb": "Free, lightweight Lua engine great for small, fast mobile and web games.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "bevy",
+  "name": "Bevy",
+  "maker": "Bevy contributors",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "advanced",
+  "url": "https://bevyengine.org/",
+  "blurb": "Data-driven open-source game engine written in Rust using an ECS architecture.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "phaser",
+  "name": "Phaser",
+  "maker": "Phaser Studio",
+  "category": "engine",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "intermediate",
+  "url": "https://phaser.io/",
+  "blurb": "Popular open-source JavaScript framework for 2D browser games.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "pico-8",
+  "name": "PICO-8",
+  "maker": "Lexaloffle",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.lexaloffle.com/pico-8.php",
+  "blurb": "A 'fantasy console' with built-in code, sprite, map and music editors and tight, charming limits.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "roblox-studio",
+  "name": "Roblox Studio",
+  "maker": "Roblox Corporation",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac"
+  ],
+  "price": "free",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://create.roblox.com/",
+  "blurb": "Free tool to build and publish Roblox experiences in Luau, with built-in monetization.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "uefn-unreal-editor-for-fortnite",
+  "name": "UEFN (Unreal Editor for Fortnite)",
+  "maker": "Epic Games",
+  "category": "engine",
+  "platforms": [
+   "Windows"
+  ],
+  "price": "free",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://dev.epicgames.com/documentation/en-us/uefn",
+  "blurb": "Build and publish Fortnite islands with Unreal tools and the Verse language.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "construct-3",
+  "name": "Construct 3",
+  "maker": "Scirra",
+  "category": "engine",
+  "platforms": [
+   "Web"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.construct.net/",
+  "blurb": "Browser-based no-code 2D engine using event sheets.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "gdevelop",
+  "name": "GDevelop",
+  "maker": "GDevelop",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux",
+   "Web"
+  ],
+  "price": "freemium",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://gdevelop.io/",
+  "blurb": "Open-source no-code engine for 2D and 3D games, with one-click export.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "rpg-maker-mz",
+  "name": "RPG Maker MZ",
+  "maker": "Gotcha Gotcha Games",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.rpgmakerweb.com/",
+  "blurb": "Make classic-style JRPGs with map, database and event editors.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "bitsy",
+  "name": "Bitsy",
+  "maker": "Adam Le Doux",
+  "category": "engine",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "free",
+  "skill": "beginner",
+  "url": "https://make.bitsy.org/",
+  "blurb": "Tiny browser editor for small pixel-art narrative games.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "twine",
+  "name": "Twine",
+  "maker": "Chris Klimas",
+  "category": "engine",
+  "platforms": [
+   "Web",
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://twinery.org/",
+  "blurb": "Open-source tool for interactive, nonlinear text stories.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "ren-py",
+  "name": "Ren'Py",
+  "maker": "Tom Rothamel",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://www.renpy.org/",
+  "blurb": "Free visual novel engine scripted in a simple Python-based language.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "l-ve",
+  "name": "LÖVE",
+  "maker": "LÖVE contributors",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "intermediate",
+  "url": "https://love2d.org/",
+  "blurb": "Minimal open-source Lua framework for 2D games.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "monogame",
+  "name": "MonoGame",
+  "maker": "MonoGame Foundation",
+  "category": "engine",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "advanced",
+  "url": "https://monogame.net/",
+  "blurb": "Open-source C# framework, the spiritual successor to XNA.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "stride",
+  "name": "Stride",
+  "maker": "Stride contributors",
+  "category": "engine",
+  "platforms": [
+   "Windows"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "advanced",
+  "url": "https://www.stride3d.net/",
+  "blurb": "Open-source C# 3D engine with a full editor.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "blender",
+  "name": "Blender",
+  "maker": "Blender Foundation",
+  "category": "art",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "intermediate",
+  "url": "https://www.blender.org/",
+  "blurb": "Free, open-source 3D suite for modeling, rigging, animation and texturing game assets.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "aseprite",
+  "name": "Aseprite",
+  "maker": "Igara Studio",
+  "category": "art",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.aseprite.org/",
+  "blurb": "Beloved pixel-art and sprite animation editor; source is available to compile yourself.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "krita",
+  "name": "Krita",
+  "maker": "Krita Foundation",
+  "category": "art",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://krita.org/",
+  "blurb": "Free, open-source digital painting app for concept art and 2D assets.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "magicavoxel",
+  "name": "MagicaVoxel",
+  "maker": "ephtracy",
+  "category": "art",
+  "platforms": [
+   "Windows",
+   "Mac"
+  ],
+  "price": "free",
+  "license": "free",
+  "skill": "beginner",
+  "url": "https://ephtracy.github.io/",
+  "blurb": "Free voxel art editor and renderer for blocky 3D models.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "adobe-substance-3d-painter",
+  "name": "Adobe Substance 3D Painter",
+  "maker": "Adobe",
+  "category": "art",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "advanced",
+  "url": "https://www.adobe.com/products/substance3d/apps/painter.html",
+  "blurb": "Industry-standard 3D texture painting for PBR game assets.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "tiled",
+  "name": "Tiled",
+  "maker": "Thorbjørn Lindeijer",
+  "category": "art",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://www.mapeditor.org/",
+  "blurb": "Free, flexible tile map editor supported by many engines.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "ldtk",
+  "name": "LDtk",
+  "maker": "Deepnight Games",
+  "category": "art",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://ldtk.io/",
+  "blurb": "Modern open-source 2D level editor from the director of Dead Cells.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "kenney-assets",
+  "name": "Kenney Assets",
+  "maker": "Kenney",
+  "category": "art",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "free",
+  "skill": "beginner",
+  "url": "https://kenney.nl/assets",
+  "blurb": "Thousands of free, public-domain (CC0) game assets for prototypes and releases.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "audacity",
+  "name": "Audacity",
+  "maker": "Audacity Team",
+  "category": "audio",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://www.audacityteam.org/",
+  "blurb": "Free audio editor for recording and cleaning up sound effects and voice.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "lmms",
+  "name": "LMMS",
+  "maker": "LMMS contributors",
+  "category": "audio",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "intermediate",
+  "url": "https://lmms.io/",
+  "blurb": "Open-source music production app for game soundtracks.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "bfxr-jsfxr",
+  "name": "Bfxr / jsfxr",
+  "maker": "Community",
+  "category": "audio",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://sfxr.me/",
+  "blurb": "Generate retro sound effects (jumps, coins, explosions) in one click.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "fmod",
+  "name": "FMOD",
+  "maker": "Firelight Technologies",
+  "category": "audio",
+  "platforms": [
+   "Windows",
+   "Mac"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "advanced",
+  "url": "https://www.fmod.com/",
+  "blurb": "Adaptive audio middleware integrated with Unity and Unreal; free for small indies.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "bosca-ceoil-blue",
+  "name": "Bosca Ceoil Blue",
+  "maker": "Community",
+  "category": "audio",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Linux",
+   "Web"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://boscaceoil.net/",
+  "blurb": "Simple, open-source music maker made for game jam soundtracks.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "scratch",
+  "name": "Scratch",
+  "maker": "MIT Media Lab",
+  "category": "kids",
+  "platforms": [
+   "Web",
+   "Windows",
+   "Mac"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://scratch.mit.edu/",
+  "blurb": "Free block-based coding from MIT where kids make and share games and stories.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "minecraft-education",
+  "name": "Minecraft Education",
+  "maker": "Mojang / Microsoft",
+  "category": "kids",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "Mobile"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://education.minecraft.net/",
+  "blurb": "Classroom edition of Minecraft with coding lessons via MakeCode and Python.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "microsoft-makecode-arcade",
+  "name": "Microsoft MakeCode Arcade",
+  "maker": "Microsoft",
+  "category": "kids",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "open-source",
+  "skill": "beginner",
+  "url": "https://arcade.makecode.com/",
+  "blurb": "Free block-and-JavaScript editor for retro arcade games in the browser.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "dreams",
+  "name": "Dreams",
+  "maker": "Media Molecule",
+  "category": "kids",
+  "platforms": [
+   "PlayStation"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.playstation.com/en-us/games/dreams/",
+  "blurb": "PS4 creation game for sculpting, animating and scripting games; live support ended in 2023.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "super-mario-maker-2",
+  "name": "Super Mario Maker 2",
+  "maker": "Nintendo",
+  "category": "kids",
+  "platforms": [
+   "Switch"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.nintendo.com/",
+  "blurb": "Design and share Mario levels — a fun intro to level design.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "game-builder-garage",
+  "name": "Game Builder Garage",
+  "maker": "Nintendo",
+  "category": "kids",
+  "platforms": [
+   "Switch"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.nintendo.com/",
+  "blurb": "Nintendo's guided visual programming game that teaches game logic step by step.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "core",
+  "name": "Core",
+  "maker": "Manticore Games",
+  "category": "kids",
+  "platforms": [
+   "Windows"
+  ],
+  "price": "free",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.coregames.com/",
+  "blurb": "Unreal-powered free platform for creating and publishing multiplayer games.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "meta-horizon-worlds-desktop-editor",
+  "name": "Meta Horizon Worlds Desktop Editor",
+  "maker": "Meta",
+  "category": "vr",
+  "platforms": [
+   "Windows",
+   "VR"
+  ],
+  "price": "free",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://developers.meta.com/horizon-worlds/",
+  "blurb": "Build social VR worlds for Meta Horizon with TypeScript and desktop tools.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "meta-xr-sdk-unity",
+  "name": "Meta XR SDK (Unity)",
+  "maker": "Meta",
+  "category": "vr",
+  "platforms": [
+   "Windows",
+   "Mac",
+   "VR"
+  ],
+  "price": "free",
+  "license": "proprietary",
+  "skill": "advanced",
+  "url": "https://developers.meta.com/horizon/",
+  "blurb": "Official SDKs for building Quest VR/MR games in Unity or Unreal.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "shapesxr",
+  "name": "ShapesXR",
+  "maker": "ShapesXR",
+  "category": "vr",
+  "platforms": [
+   "VR",
+   "Web"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.shapesxr.com/",
+  "blurb": "Prototype and storyboard VR/AR scenes collaboratively inside a headset.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "itch-io",
+  "name": "itch.io",
+  "maker": "itch corp",
+  "category": "publish",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://itch.io/",
+  "blurb": "Open indie storefront: upload games free, set your own revenue share, join game jams.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "steamworks",
+  "name": "Steamworks",
+  "maker": "Valve",
+  "category": "publish",
+  "platforms": [
+   "Web"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://partner.steamgames.com/",
+  "blurb": "Publish on Steam for a per-game app fee (US$100, recoupable after sales).",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "google-play-console",
+  "name": "Google Play Console",
+  "maker": "Google",
+  "category": "publish",
+  "platforms": [
+   "Web"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://play.google.com/console/",
+  "blurb": "Publish Android games for a one-time US$25 developer registration fee.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "apple-app-store",
+  "name": "Apple App Store",
+  "maker": "Apple",
+  "category": "publish",
+  "platforms": [
+   "Web"
+  ],
+  "price": "paid",
+  "license": "proprietary",
+  "skill": "advanced",
+  "url": "https://developer.apple.com/programs/",
+  "blurb": "Ship iOS games via the Apple Developer Program (US$99/year).",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "github-pages",
+  "name": "GitHub Pages",
+  "maker": "GitHub",
+  "category": "publish",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "proprietary",
+  "skill": "intermediate",
+  "url": "https://pages.github.com/",
+  "blurb": "Free static hosting — perfect for HTML5 games and jam builds.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "newgrounds",
+  "name": "Newgrounds",
+  "maker": "Newgrounds",
+  "category": "publish",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.newgrounds.com/",
+  "blurb": "Long-running community portal for browser games and animation.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "gdquest",
+  "name": "GDQuest",
+  "maker": "GDQuest",
+  "category": "learn",
+  "platforms": [
+   "Web"
+  ],
+  "price": "freemium",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://www.gdquest.com/",
+  "blurb": "Godot tutorials and courses, including free interactive GDScript lessons.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "unity-learn",
+  "name": "Unity Learn",
+  "maker": "Unity Technologies",
+  "category": "learn",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "proprietary",
+  "skill": "beginner",
+  "url": "https://learn.unity.com/",
+  "blurb": "Free official Unity pathways from first project to job-ready.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "brackeys",
+  "name": "Brackeys",
+  "maker": "Brackeys",
+  "category": "learn",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "free",
+  "skill": "beginner",
+  "url": "https://www.youtube.com/@Brackeys",
+  "blurb": "Famous YouTube channel for friendly Unity and Godot tutorials.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "game-programming-patterns",
+  "name": "Game Programming Patterns",
+  "maker": "Robert Nystrom",
+  "category": "learn",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "free",
+  "skill": "intermediate",
+  "url": "https://gameprogrammingpatterns.com/",
+  "blurb": "Free online book explaining design patterns for game code.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "global-game-jam",
+  "name": "Global Game Jam",
+  "maker": "Global Game Jam",
+  "category": "learn",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "free",
+  "skill": "beginner",
+  "url": "https://globalgamejam.org/",
+  "blurb": "Annual worldwide jam — make a game in 48 hours with others.",
+  "added": "2026-10-13"
+ },
+ {
+  "slug": "cs50-s-intro-to-game-development",
+  "name": "CS50's Intro to Game Development",
+  "maker": "Harvard",
+  "category": "learn",
+  "platforms": [
+   "Web"
+  ],
+  "price": "free",
+  "license": "free",
+  "skill": "intermediate",
+  "url": "https://cs50.harvard.edu/games/",
+  "blurb": "Free Harvard course building classic games in LÖVE and Unity.",
+  "added": "2026-10-13"
+ }
+]
