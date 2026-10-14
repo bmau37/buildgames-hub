@@ -6,12 +6,16 @@
    "Claude"
   ],
   "owner": "Brandon Mau",
-  "status": "Case study coming soon",
-  "summary": "A single-file playable HTML game (version V60), currently being prepared for the Google Play Store.",
-  "play_url": "",
-  "prompts": "",
-  "iterations": "",
-  "tools": ""
+  "status": "Live — playable on the web; Android build in Google Play prep",
+  "summary": "Junktris is a junk-hauling twist on falling-block puzzles: you load real-world junk — mattresses, recliners, dryers, microwaves, a rare oversized shed — into a truck, balancing how tightly you pack against the truck's axle weight limit. It was built with Claude as a single self-contained HTML file and iterated to version 60.",
+  "play_url": "https://bmau37.github.io/junktris/",
+  "prompts": "Coming soon — the owner will share example prompts.",
+  "iterations": "Iterated to V60 (locked for release on 2026-08-24). V58 is kept unchanged as the known-good baseline, with V59 as the immediate rollback. The public repo has 66 commits.",
+  "tools": "Claude; one HTML file (canvas game, audio synthesized in-browser); GitHub Pages with a PWA service worker; an Android wrapper app (target API 36) that embeds the game for offline play. Debug APK and unsigned release AAB build; signing and the Play Store listing are the remaining steps.",
+  "how_it_plays": "Each turn you pick the next item from three curbside choices, then rotate, slide and drop it into the truck. Line Haul mode clears full rows; Tight Pack mode scores packed layers. Overload the axle and the load blows (\"KABOOM\"). Easy, Medium and Hard difficulties, one-hand left/right layouts, an in-game Junk Hauler's Guide to all 16 items, and music synthesized in-game so it works offline.",
+  "repo_url": "https://github.com/bmau37/junktris",
+  "video": "media/junktris-gameplay.mp4",
+  "poster": "media/junktris-poster.webp"
  },
  {
   "slug": "pondborn",
@@ -22,9 +26,9 @@
   "owner": "Brandon Mau",
   "status": "Case study coming soon",
   "summary": "Details coming soon.",
-  "play_url": "",
   "prompts": "",
   "iterations": "",
-  "tools": ""
+  "tools": "",
+  "play_url": ""
  }
 ]
