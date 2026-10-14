@@ -33,7 +33,7 @@ Last verified: 2026-10-13
 - [Construct 3](https://bmau37.github.io/buildgames-hub/tools/construct-3.html): Browser-based no-code 2D engine using event sheets. (beginner, freemium, proprietary, ages: Kids 6–12/Teens 13–17/Grown-ups 18+)
 - [GDevelop](https://bmau37.github.io/buildgames-hub/tools/gdevelop.html): Open-source no-code engine for 2D and 3D games, with one-click export. (beginner, freemium, open-source, ages: Kids 6–12/Teens 13–17/Grown-ups 18+)
 - [RPG Maker MZ](https://bmau37.github.io/buildgames-hub/tools/rpg-maker-mz.html): Make classic-style JRPGs with map, database and event editors. (beginner, paid, proprietary, ages: Teens 13–17/Grown-ups 18+)
-- [Bitsy](https://bmau37.github.io/buildgames-hub/tools/bitsy.html): Tiny browser editor for small pixel-art narrative games. (beginner, free, free, ages: Kids 6–12/Teens 13–17/Grown-ups 18+)
+- [Bitsy](https://bmau37.github.io/buildgames-hub/tools/bitsy.html): Tiny browser editor for small pixel-art narrative games. (beginner, free, proprietary, ages: Kids 6–12/Teens 13–17/Grown-ups 18+)
 - [Twine](https://bmau37.github.io/buildgames-hub/tools/twine.html): Open-source tool for interactive, nonlinear text stories. (beginner, free, open-source, ages: Kids 6–12/Teens 13–17/Grown-ups 18+)
 - [Ren'Py](https://bmau37.github.io/buildgames-hub/tools/ren-py.html): Free, open-source visual novel engine (free for commercial use) that exports to desktop, mobile and web. (beginner, free, open-source, ages: Teens 13–17/Grown-ups 18+)
 - [LÖVE](https://bmau37.github.io/buildgames-hub/tools/l-ve.html): Minimal open-source Lua framework for 2D games. (intermediate, free, open-source, ages: Teens 13–17/Grown-ups 18+)
@@ -44,11 +44,11 @@ Last verified: 2026-10-13
 - [Blender](https://bmau37.github.io/buildgames-hub/tools/blender.html): Free, open-source 3D suite for modeling, rigging, animation and texturing game assets. (intermediate, free, open-source, ages: Teens 13–17/Grown-ups 18+)
 - [Aseprite](https://bmau37.github.io/buildgames-hub/tools/aseprite.html): Beloved pixel-art and sprite animation editor; source is available to compile yourself. (beginner, paid, proprietary, ages: Teens 13–17/Grown-ups 18+)
 - [Krita](https://bmau37.github.io/buildgames-hub/tools/krita.html): Free, open-source digital painting app for concept art and 2D assets. (beginner, free, open-source, ages: Kids 6–12/Teens 13–17/Grown-ups 18+)
-- [MagicaVoxel](https://bmau37.github.io/buildgames-hub/tools/magicavoxel.html): Free voxel art editor and renderer for blocky 3D models. (beginner, free, free, ages: Kids 6–12/Teens 13–17/Grown-ups 18+)
+- [MagicaVoxel](https://bmau37.github.io/buildgames-hub/tools/magicavoxel.html): Free voxel art editor and renderer for blocky 3D models. (beginner, free, proprietary, ages: Kids 6–12/Teens 13–17/Grown-ups 18+)
 - [Adobe Substance 3D Painter](https://bmau37.github.io/buildgames-hub/tools/adobe-substance-3d-painter.html): Industry-standard 3D texture painting for PBR game assets. (advanced, paid, proprietary, ages: Grown-ups 18+)
 - [Tiled](https://bmau37.github.io/buildgames-hub/tools/tiled.html): Free, flexible tile map editor supported by many engines. (beginner, free, open-source, ages: Teens 13–17/Grown-ups 18+)
 - [LDtk](https://bmau37.github.io/buildgames-hub/tools/ldtk.html): Modern open-source 2D level editor from the director of Dead Cells. (beginner, free, open-source, ages: Teens 13–17/Grown-ups 18+)
-- [Kenney Assets](https://bmau37.github.io/buildgames-hub/tools/kenney-assets.html): Thousands of free, public-domain (CC0) game assets for prototypes and releases. (beginner, free, free, ages: Kids 6–12/Teens 13–17/Grown-ups 18+)
+- [Kenney Assets](https://bmau37.github.io/buildgames-hub/tools/kenney-assets.html): Thousands of free, public-domain (CC0) game assets for prototypes and releases. (beginner, free, proprietary, ages: Kids 6–12/Teens 13–17/Grown-ups 18+)
 
 ## Audio & Music
 - [Audacity](https://bmau37.github.io/buildgames-hub/tools/audacity.html): Free audio editor for recording and cleaning up sound effects and voice. (beginner, free, open-source, ages: Teens 13–17/Grown-ups 18+)
@@ -82,10 +82,10 @@ Last verified: 2026-10-13
 ## Learning
 - [GDQuest](https://bmau37.github.io/buildgames-hub/tools/gdquest.html): Godot tutorials and courses, including free interactive GDScript lessons. (beginner, freemium, proprietary, ages: Teens 13–17/Grown-ups 18+)
 - [Unity Learn](https://bmau37.github.io/buildgames-hub/tools/unity-learn.html): Free official Unity pathways from first project to job-ready. (beginner, free, proprietary, ages: Teens 13–17/Grown-ups 18+)
-- [Brackeys](https://bmau37.github.io/buildgames-hub/tools/brackeys.html): Famous YouTube channel for friendly Unity and Godot tutorials. (beginner, free, free, ages: Teens 13–17/Grown-ups 18+)
-- [Game Programming Patterns](https://bmau37.github.io/buildgames-hub/tools/game-programming-patterns.html): Free online book explaining design patterns for game code. (intermediate, free, free, ages: Teens 13–17/Grown-ups 18+)
-- [Global Game Jam](https://bmau37.github.io/buildgames-hub/tools/global-game-jam.html): Annual worldwide jam — make a game in 48 hours with others. (beginner, free, free, ages: Teens 13–17/Grown-ups 18+)
-- [CS50's Intro to Game Development](https://bmau37.github.io/buildgames-hub/tools/cs50-s-intro-to-game-development.html): Free Harvard course building classic games in LÖVE and Unity. (intermediate, free, free, ages: Teens 13–17/Grown-ups 18+)
+- [Brackeys](https://bmau37.github.io/buildgames-hub/tools/brackeys.html): Famous YouTube channel for friendly Unity and Godot tutorials. (beginner, free, proprietary, ages: Teens 13–17/Grown-ups 18+)
+- [Game Programming Patterns](https://bmau37.github.io/buildgames-hub/tools/game-programming-patterns.html): Free online book explaining design patterns for game code. (intermediate, free, proprietary, ages: Teens 13–17/Grown-ups 18+)
+- [Global Game Jam](https://bmau37.github.io/buildgames-hub/tools/global-game-jam.html): Annual worldwide jam — make a game in 48 hours with others. (beginner, free, proprietary, ages: Teens 13–17/Grown-ups 18+)
+- [CS50's Intro to Game Development](https://bmau37.github.io/buildgames-hub/tools/cs50-s-intro-to-game-development.html): Free Harvard course building classic games in LÖVE and Unity. (intermediate, free, proprietary, ages: Teens 13–17/Grown-ups 18+)
 
 ## Make a game (Pathfinder)
 - [Pathfinder](https://bmau37.github.io/buildgames-hub/pathfinder/): describe a game in plain words; get an age-aware tool stack, steps with time estimates, a tutorial, videos and an AI starter prompt. Templates: 2D platformer, Falling-block / match puzzle, Endless runner, Top-down shooter / arena survivor, RPG / adventure, Visual novel / story game, Idle / clicker, Card / deckbuilder, Tower defense, Racing, Horror, First-person shooter, Survival crafting, City builder / strategy, Farming / cozy sim, Rhythm / music game, Fighting game, Party / local multiplayer, Roblox obby, Fortnite island (UEFN), VR game for Quest, Mobile casual, Text adventure / Twine, Educational / quiz, Physics sandbox / puzzle, AI vibe-coded single-file HTML game, 3D adventure / platformer, Game for or with a kid

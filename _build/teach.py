@@ -12,7 +12,7 @@ def md(src):
         if l.startswith("```"):
             flush();lang=l[3:].strip();j=i+1;buf=[]
             while not lines[j].startswith("```"):buf.append(lines[j]);j+=1
-            out.append(f'<div class="code"><span class="lang">{E(lang or "code")}</span><button class="copy" type="button">Copy</button><pre><code>{E(chr(10).join(buf))}</code></pre></div>');i=j+1;continue
+            out.append(f'<div class="code"><span class="lang">{E(lang or "code")}</span><button class="copy" type="button">Copy</button><pre tabindex="0"><code>{E(chr(10).join(buf))}</code></pre></div>');i=j+1;continue
         if l.startswith("## "):flush();out.append(f'<h2 id="{re.sub(r"[^a-z0-9]+","-",l[3:].lower()).strip("-")}">{inl(l[3:])}</h2>')
         elif l.startswith("- "):
             flush();items=[]
@@ -26,7 +26,7 @@ def md(src):
 def agechips(ages,pre=""):return "".join(f'<span class="age a-{a}">{AGES[a][0]} {AGES[a][1]}</span>' for a in ages)
 def vcard(v,pre=""):
     tool=next((BY[x] for x in v.get("tools",[]) if x in BY),None);c=CATS[tool["category"]][2] if tool else P["plum"]
-    return f'''<article class="vcard" style="--c:{c}" data-types="{" ".join(v["types"])}" data-tools="{" ".join(v.get("tools",[]))}" data-ages="{" ".join(v["ages"])}"><button class="yt" type="button" data-id="{v["id"]}" aria-label="Play video: {E(v["title"])}"><span class="ytbg">{icon("play",34)}</span><span class="ytlen">{E(v.get("length") or "")}</span><span class="ytnote">Click to load from YouTube</span></button>
+    return f'''<article class="vcard" style="--c:{c}" data-types="{" ".join(v["types"])}" data-tools="{" ".join(v.get("tools",[]))}" data-ages="{" ".join(v["ages"])}"><button class="yt" type="button" data-id="{v["id"]}" aria-label="Play video: {E(v["title"])} (Click to load from YouTube)"><span class="ytbg">{icon("play",34)}</span><span class="ytlen">{E(v.get("length") or "")}</span><span class="ytnote">Click to load from YouTube</span></button>
 <div class="vb"><h3>{E(v["title"])}</h3><p class="mut">{E(v["channel"])}</p><div class="meta">{agechips(v["ages"])}{"".join(f'<a class="pill" href="{pre}tools/{x}.html">{E(BY[x]["name"])}</a>' for x in v.get("tools",[]) if x in BY)}</div><a class="ext" href="{v["url"]}" rel="noopener">Watch on YouTube ↗</a></div></article>'''
 YTJS='''<script>document.addEventListener("click",e=>{const b=e.target.closest(".yt");if(b){const f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+b.dataset.id+"?autoplay=1&rel=0";f.title=b.getAttribute("aria-label");f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.allowFullscreen=true;f.loading="lazy";b.replaceWith(f)}const c=e.target.closest(".copy");if(c){const t=c.parentElement.querySelector("pre,textarea");navigator.clipboard.writeText(t.value||t.innerText).then(()=>{c.textContent="Copied!";setTimeout(()=>c.textContent="Copy",1500)})}});</script>'''
 TCSS=""".vgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:var(--s4)}}
@@ -80,7 +80,7 @@ def build_teach():
              {"@context":"https://schema.org","@type":"HowTo","name":t["title"],"description":t["summary"],"tool":[{"@type":"HowToTool","name":BY[x]["name"]} for x in t["tools"] if x in BY],
               "step":[{"@type":"HowToStep","name":h} for h in re.findall(r"^## (.+)$",t["body"],re.M)]},[("Tutorials","tutorials/"),(t["title"],None)],og="paths")
         tc.append(f'<article class="tcard"><div class="ta">{art}</div><div class="tb"><div class="tutmeta" style="margin:0 0 .5rem"><span class="tag">⏱ {E(t["time"])}</span>{agechips(t["ages"])}</div><h3><a href="{"tutorials/" if False else ""}{t["slug"]}.html">{E(t["title"])}</a></h3><p class="mut" style="margin:.4rem 0 0">{E(t["summary"])}</p></div></article>')
-    page("tutorials/index.html",f"Free game-making tutorials — {SITE_NAME}","Original, beginner-friendly tutorials: AI single-file games, Godot, Scratch, Roblox, Blender, Unity, pixel art, sound, itch.io, Twine, PICO-8 and making games with kids.",
+    page("tutorials/index.html",f"Free game-making tutorials — {SITE_NAME}","Free, beginner-friendly game-making tutorials: AI games, Godot, Scratch, Roblox, Blender, Unity, pixel art, sound, publishing and more.",
          f'<div class="phead"><div><span class="eyebrow">{icon("book-open",14)} Tutorials</span><h1>Learn by making.</h1><p style="font-size:1.15rem">{len(tuts)} hands-on tutorials written in plain language, each with a checklist, time estimate, age range, related videos and a next step.</p><p><a class="btn" href="../pathfinder/">{icon("sparkles")} Not sure where to start? Describe your game</a></p></div>{cluster()}</div><div class="tcards">{"".join(tc)}</div>{ticket()}',
          {"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":i+1,"url":f"{BASE_URL}/tutorials/{t['slug']}.html","name":t["title"]} for i,t in enumerate(tuts)]},[("Tutorials",None)],og="paths")
     # ---- videos
@@ -89,7 +89,7 @@ def build_teach():
     body=f'''<div class="phead"><div><span class="eyebrow">{icon("play",14)} Video library</span><h1>Watch people make games.</h1><p style="font-size:1.1rem">{len(vids)} real tutorials from official channels and well-known teachers, hand-tagged by tool, game type and age. Videos load only when you click — no YouTube tracking before that.</p></div>{pic2("hero",[1280,960,640],"Clay illustration of floating game worlds")}</div>
 <div class="controls" style="grid-template-columns:2fr 1fr 1fr 1fr"><input id="vq" type="search" placeholder="Search videos…" aria-label="Search videos"><select id="vt" aria-label="Tool"><option value="">Any tool</option>{"".join(f'<option value="{s}">{E(BY[s]["name"])}</option>' for s in vtools)}</select>
 <select id="vg" aria-label="Game type"><option value="">Any game type</option>{"".join(f'<option value="{x}">{E(TL.get(x,x))}</option>' for x in types)}</select><select id="va" aria-label="Age"><option value="">Any age</option>{"".join(f'<option value="{k}">{v[0]} ({v[1]})</option>' for k,v in AGES.items())}</select></div>
-<p class="mut" id="vc"></p><div class="vgrid" id="vl">{"".join(vcard(v,"../") for v in vids)}</div><div class="empty" id="vnone" hidden>{ART["kids"]}<h3>No videos match that combo.</h3><p class="mut">Try clearing a filter.</p></div>
+<h2 class="sr-only">All videos</h2><p class="mut" id="vc"></p><div class="vgrid" id="vl">{"".join(vcard(v,"../") for v in vids)}</div><div class="empty" id="vnone" hidden>{ART["kids"]}<h3>No videos match that combo.</h3><p class="mut">Try clearing a filter.</p></div>
 <p class="mut" style="margin-top:var(--s4);font-size:.88rem">Every video was checked to exist on {vids[0]["verified"]} via YouTube's oEmbed; titles and channel names are shown exactly as YouTube reports them. Videos belong to their creators.</p>{YTJS}
 <script>const $=i=>document.getElementById(i);function vf(){{const q=$("vq").value.toLowerCase(),t=$("vt").value,g=$("vg").value,a=$("va").value;let n=0;document.querySelectorAll(".vcard").forEach(c=>{{const ok=(!q||c.innerText.toLowerCase().includes(q))&&(!t||c.dataset.tools.split(" ").includes(t))&&(!g||c.dataset.types.split(" ").includes(g))&&(!a||c.dataset.ages.split(" ").includes(a));c.hidden=!ok;n+=ok}});$("vc").textContent=n+" of {len(vids)} videos";$("vnone").hidden=n>0}}["vq","vt","vg","va"].forEach(i=>$(i).addEventListener("input",vf));vf()</script>'''
     page("videos/index.html",f"Game-making video tutorials — {SITE_NAME}",f"{len(vids)} verified YouTube tutorials for Godot, Unity, Unreal, Roblox, Scratch, Blender, pixel art and more — filter by tool, game type and age.",body,
@@ -107,7 +107,7 @@ def build_teach():
     return EX
 def PFFORM(pre,action=""):
     EX=["a 2D platformer with a cat","multiplayer racing on Roblox","a 3D horror game","tetris-like puzzle on phone","VR game for Quest","story game for my kid","an idle clicker made with AI","a cozy farming game"]
-    return f'''<div class="pf"><form id="pff" action="{action}" method="get" role="search"><label class="skip" for="pfq">Describe the game you want to make</label><input type="text" id="pfq" name="q" placeholder="e.g. a 2D platformer with a cat" autocomplete="off" required><input type="hidden" name="age" id="pfage" value="">
+    return f'''<div class="pf"><form id="pff" action="{action}" method="get" role="search" aria-label="Pathfinder"><label class="skip" for="pfq">Describe the game you want to make</label><input type="text" id="pfq" name="q" placeholder="e.g. a 2D platformer with a cat" autocomplete="off" required><input type="hidden" name="age" id="pfage" value="">
 <button class="btn" type="submit">{icon("sparkles")} Show my path</button></form>
 <div class="agetog" role="group" aria-label="Who is building?"><span>Who's building?</span><button type="button" data-age="kids" aria-pressed="false">Kid 6–12</button><button type="button" data-age="teens" aria-pressed="false">Teen 13–17</button><button type="button" data-age="adults" aria-pressed="false">Grown-up 18+</button></div>
 <div class="chips" aria-label="Examples">{"".join(f'<button type="button" class="chip">{E(x)}</button>' for x in EX)}</div></div>
@@ -268,6 +268,18 @@ footer:before{content:"";position:absolute;left:0;right:0;top:-59px;height:60px;
 .stool{border-radius:18px}.stool i{border:0}.prompt textarea{border:0;background:#1d1838}
 .burger{border:0!important;border-radius:14px;background:linear-gradient(135deg,#ffd166,#f2b134)!important;box-shadow:0 10px 22px -10px #c98a00aa!important}.burger span{background:#1b1630;border-radius:3px}
 header.top{border-bottom:1px solid #e6dff7!important;box-shadow:0 10px 30px -22px #3b1f9e88!important}.k-videos header.top{border-color:#ffffff14!important}
+/* audit fixes */
+.mesh{inset:-180px!important}.mhero{overflow:clip}html,body{overflow-x:clip}
+footer h2.fh{font:700 .8rem Inter;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .8rem;color:#fff;-webkit-text-fill-color:#fff;background:none;opacity:.85}
+.gcount{color:#6f5bd6!important}
+.k-videos b{color:inherit}.k-videos [style*="--tink"],.k-videos .eyebrow b{color:#ffb08a!important}
+.card h3 a{display:inline-block;padding:3px 0;min-height:24px}
+.tablewrap{overflow-x:auto;border-radius:22px}.tablewrap:focus-visible{outline:3px solid #5b3fd9;outline-offset:3px}
+@media (max-width:560px){.k-compare .facts{font-size:.88rem}.k-compare .facts th,.k-compare .facts td{padding:.55rem .5rem}}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #5b3fd9!important;outline-offset:3px;border-radius:8px}
+.k-videos a:focus-visible,.k-videos button:focus-visible,footer a:focus-visible{outline-color:#ffd166!important}
+pre{max-width:100%}.prose,.prose p,.prose li{overflow-wrap:anywhere;min-width:0}.tutlayout>*{min-width:0}a.pill{min-height:26px;display:inline-flex;align-items:center}.tkh{-webkit-text-fill-color:currentColor;background:none}
+.sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 /* about / 404 */
 .k-about .phead,.k-404 .phead{border-radius:60px 24px 60px 24px}
 @media (max-width:860px){.k-tool .phead{grid-template-columns:1fr}.k-showcase .sc{grid-template-columns:1fr}.k-showcase .sc>.vid{grid-column:1;grid-row:auto;margin:1rem 0}.k-tutorials .tcard:nth-child(3n+2){transform:none}.k-path ol.steps li:nth-child(n){margin-left:0!important;margin-right:0!important}.k-tutorial .tutlayout{grid-template-columns:1fr}.cluster{height:200px}.cluster .clay2 img{width:96px;height:96px}}
