@@ -35,26 +35,26 @@ CSS=f"""@font-face{{font-family:Inter;src:url(fonts/inter-latin-400-normal.woff2
 @font-face{{font-family:"Space Grotesk";src:url(fonts/space-grotesk-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}}
 @font-face{{font-family:"Space Grotesk";src:url(fonts/space-grotesk-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}}
 :root{{--ink:{INK};--cream:{CREAM};--paper:#fffaf2;--tomato:{P["tomato"]};--teal:{P["teal"]};--mustard:{P["mustard"]};--plum:{P["plum"]};--mut:#5d5873;--tink:#c2410c;--r:22px;
---s1:.25rem;--s2:.5rem;--s3:1rem;--s4:1.5rem;--s5:2.5rem;--s6:4rem;--sh:5px 5px 0 var(--ink)}}
+--s1:.25rem;--s2:.5rem;--s3:1rem;--s4:1.5rem;--s5:2.5rem;--s6:4rem;--sh:4px 4px 0 var(--ink),0 18px 34px -20px #3b1f9e55}}
 *{{box-sizing:border-box}}[id]{{scroll-margin-top:80px}}html{{scroll-behavior:smooth}}
-body{{margin:0;font:400 1rem/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream) url("{GRAIN}");-webkit-font-smoothing:antialiased}}
+body{{margin:0;font:400 1rem/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:radial-gradient(60vw 40vw at 100% 0,#efe7ff 0,transparent 70%) fixed,radial-gradient(50vw 40vw at 0 100%,#e3f7f3 0,transparent 70%) fixed,#fbf8f3;-webkit-font-smoothing:antialiased}}
 h1,h2,h3,.disp{{font-family:"Space Grotesk",Inter,sans-serif;font-weight:700;line-height:1.08;letter-spacing:-.02em;margin:0 0 var(--s3)}}
 h1{{font-size:clamp(2.2rem,6.5vw,4.2rem)}}h2{{font-size:clamp(1.6rem,4vw,2.4rem)}}h3{{font-size:1.15rem;margin:0}}
 a{{color:var(--ink);text-decoration-thickness:2px;text-underline-offset:3px}}a:hover{{color:var(--tink)}}
 :focus-visible{{outline:3px solid var(--plum);outline-offset:3px;border-radius:8px}}
 .ic{{vertical-align:-3px;flex:none}}.wrap{{max-width:1160px;margin:auto;padding:0 var(--s3)}}
 .skip{{position:absolute;left:-999px}}.skip:focus{{left:8px;top:8px;background:#fff;padding:8px;z-index:99}}
-header.top{{position:sticky;top:0;z-index:20;background:#f6efe3ee;backdrop-filter:blur(8px);border-bottom:3px solid var(--ink)}}
+header.top{{position:sticky;top:0;z-index:20;background:#fbf8ffcc;backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid #1b163022;box-shadow:0 8px 24px -18px #3b1f9e66}}
 header nav{{display:flex;gap:var(--s4);align-items:center;padding:.6rem var(--s3);max-width:1160px;margin:auto;overflow-x:auto;scrollbar-width:none}}
 header .links{{display:flex;gap:var(--s4);align-items:center}}.navcta{{padding:.45rem .9rem;font-size:.9rem}}
-.burger{{display:none;width:46px;height:42px;border:3.5px solid var(--ink);border-radius:12px;background:var(--mustard);box-shadow:3px 3px 0 var(--ink);flex-direction:column;justify-content:center;gap:5px;padding:0 10px;cursor:pointer}}.burger span{{display:block;height:3px;background:var(--ink);border-radius:2px;transition:transform .2s,opacity .2s}}
+.burger{{display:none;width:46px;height:42px;border:2.5px solid var(--ink);border-radius:12px;background:var(--mustard);box-shadow:3px 3px 0 var(--ink);flex-direction:column;justify-content:center;gap:5px;padding:0 10px;cursor:pointer}}.burger span{{display:block;height:3px;background:var(--ink);border-radius:2px;transition:transform .2s,opacity .2s}}
 .open .burger span:nth-child(1){{transform:translateY(8px) rotate(45deg)}}.open .burger span:nth-child(2){{opacity:0}}.open .burger span:nth-child(3){{transform:translateY(-8px) rotate(-45deg)}}
 .scrim{{position:fixed;inset:0;background:#1b163066;z-index:18}}
 @media (max-width:760px){{header.top{{backdrop-filter:none;background:var(--cream)}}.burger{{display:flex}}header nav{{overflow:visible}}header .links{{position:fixed;top:0;right:0;bottom:0;width:min(82vw,320px);flex-direction:column;align-items:stretch;gap:0;padding:5rem 1.2rem 1.5rem;background:var(--cream);border-left:3px solid var(--ink);transform:translateX(105%);transition:transform .25s ease;z-index:19}}header .links a:not(.btn){{font:700 1.4rem "Space Grotesk";padding:.8rem 0;border-bottom:2px dashed #1b163033}}header .links .navcta{{margin-top:1.2rem;justify-content:center}}.open .links{{transform:none}}.burger{{position:relative;z-index:20}}}}
 header nav a{{text-decoration:none;font-weight:600;white-space:nowrap;font-size:.95rem}}
 .brand{{display:flex;align-items:center;gap:.5rem;margin-right:auto;font-family:"Space Grotesk";font-size:1.25rem;font-weight:700}}
 .brand b{{color:var(--tink)}}
-.btn{{display:inline-flex;align-items:center;gap:.5rem;font:700 1rem "Space Grotesk";background:var(--mustard);color:var(--ink);padding:.8rem 1.3rem;border:3.5px solid var(--ink);border-radius:14px;box-shadow:var(--sh);text-decoration:none;cursor:pointer;transition:transform .12s,box-shadow .12s}}
+.btn{{display:inline-flex;align-items:center;gap:.5rem;font:700 1rem "Space Grotesk";background:var(--mustard);color:var(--ink);padding:.8rem 1.3rem;border:2.5px solid var(--ink);border-radius:14px;box-shadow:var(--sh);text-decoration:none;cursor:pointer;transition:transform .12s,box-shadow .12s}}
 .btn:hover{{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);color:var(--ink)}}.btn:active{{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}}
 .btn.alt{{background:#fff}}.sec.inkbg .btn,.sec.inkbg .btn:hover{{color:var(--ink)}}.btn.dark{{background:var(--ink);color:var(--cream)}}
 .hud{{display:inline-flex;gap:.6rem;font:700 .8rem/1 ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;background:var(--ink);color:var(--mustard);padding:.5rem .8rem;border-radius:6px;box-shadow:3px 3px 0 var(--tomato)}}
@@ -71,41 +71,41 @@ header nav a{{text-decoration:none;font-weight:600;white-space:nowrap;font-size:
 .mark{{background:linear-gradient(transparent 62%,var(--mustard) 0)}}
 .stage{{position:relative;aspect-ratio:1/0.85}}
 .stage .layer{{position:absolute;transition:transform .2s ease-out;will-change:transform}}
-.stage .blob{{inset:4% 0 0 6%;background:var(--teal);border:3.5px solid var(--ink);border-radius:58% 42% 46% 54%/50% 60% 40% 50%}}
-.stage .main{{inset:12% 6% 14% 2%;border:3.5px solid var(--ink);border-radius:var(--r);overflow:hidden;box-shadow:8px 8px 0 var(--ink);transform:rotate(-2deg)}}
+.stage .blob{{inset:4% 0 0 6%;background:var(--teal);border:2.5px solid var(--ink);border-radius:58% 42% 46% 54%/50% 60% 40% 50%}}
+.stage .main{{inset:12% 6% 14% 2%;border:2.5px solid var(--ink);border-radius:var(--r);overflow:hidden;box-shadow:8px 8px 0 var(--ink);transform:rotate(-2deg)}}
 .stage .main svg{{display:block;width:100%;height:100%}}
-.stage .chip{{background:#fff;border:3.5px solid var(--ink);border-radius:14px;padding:.5rem .8rem;font:700 .9rem "Space Grotesk";box-shadow:var(--sh);display:flex;gap:.4rem;align-items:center}}
+.stage .chip{{background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:.5rem .8rem;font:700 .9rem "Space Grotesk";box-shadow:var(--sh);display:flex;gap:.4rem;align-items:center}}
 .c1{{top:2%;right:4%;transform:rotate(4deg)}}.c2{{bottom:4%;left:0;transform:rotate(-5deg)}}.c3{{bottom:22%;right:-2%;transform:rotate(3deg);background:var(--mustard)!important}}
 /* bento categories */
 .bento{{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:var(--s3)}}
-.tile{{position:relative;border:3.5px solid var(--ink);border-radius:var(--r);overflow:hidden;text-decoration:none;box-shadow:var(--sh);transition:transform .18s,box-shadow .18s;background:var(--c)}}
+.tile{{position:relative;border:2.5px solid var(--ink);border-radius:var(--r);overflow:hidden;text-decoration:none;box-shadow:var(--sh);transition:transform .18s,box-shadow .18s;background:var(--c)}}
 .tile svg.art{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
-.tile .lbl{{position:absolute;left:12px;bottom:12px;background:#fff;border:3.5px solid var(--ink);border-radius:12px;padding:.35rem .7rem;font:700 1rem "Space Grotesk";display:flex;gap:.4rem;align-items:center}}
+.tile .lbl{{position:absolute;left:12px;bottom:12px;background:#fff;border:2.5px solid var(--ink);border-radius:12px;padding:.35rem .7rem;font:700 1rem "Space Grotesk";display:flex;gap:.4rem;align-items:center}}
 .tile .n{{position:absolute;right:12px;top:12px;font:700 .75rem ui-monospace,monospace;background:var(--ink);color:var(--cream);padding:.3rem .5rem;border-radius:6px}}
 .tile:hover{{transform:translate(-3px,-3px) rotate(-.6deg);box-shadow:8px 8px 0 var(--ink)}}
 .tile:nth-child(1){{grid-column:span 2;grid-row:span 2}}.tile:nth-child(2){{grid-row:span 2}}
 /* carousel */
 .rail{{display:flex;gap:var(--s4);overflow-x:auto;scroll-snap-type:x mandatory;padding:var(--s3) var(--s3) var(--s5);scrollbar-width:thin}}
-.feat{{scroll-snap-align:start;flex:0 0 min(280px,78vw);background:#fff;border:3.5px solid var(--ink);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;transition:transform .18s}}
+.feat{{scroll-snap-align:start;flex:0 0 min(280px,78vw);background:#fff;border:2.5px solid var(--ink);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;transition:transform .18s}}
 .feat:nth-child(odd){{transform:rotate(-1.2deg)}}.feat:nth-child(even){{transform:rotate(1deg) translateY(10px)}}.feat:hover{{transform:rotate(0) translateY(-6px)}}
 .feat .top{{height:120px;background:var(--c);border-bottom:3px solid var(--ink);display:grid;place-items:center;color:var(--ink)}}
-.feat .top span{{font:700 3.2rem "Space Grotesk";background:#fff;border:3.5px solid var(--ink);border-radius:50%;width:84px;height:84px;display:grid;place-items:center;box-shadow:var(--sh)}}
+.feat .top span{{font:700 3.2rem "Space Grotesk";background:#fff;border:2.5px solid var(--ink);border-radius:50%;width:84px;height:84px;display:grid;place-items:center;box-shadow:var(--sh)}}
 .feat .bd{{padding:var(--s3) var(--s4) var(--s4)}}
 /* paths staggered */
 .path{{display:grid;grid-template-columns:1fr 1.2fr;gap:var(--s5);align-items:center;margin:var(--s5) 0}}
 .path:nth-child(even){{grid-template-columns:1.2fr 1fr}}.path:nth-child(even) .pic{{order:2}}
-.pic{{position:relative}}.pic:before{{content:"";position:absolute;inset:-6% -4% -10% 4%;background:var(--c);border-radius:42% 58% 63% 37%/45% 41% 59% 55%;border:3.5px solid var(--ink);z-index:0}}
-.pic svg{{position:relative;z-index:1;width:100%;height:auto;border:3.5px solid var(--ink);border-radius:var(--r);box-shadow:var(--sh);transform:rotate(-1.5deg)}}
+.pic{{position:relative}}.pic:before{{content:"";position:absolute;inset:-6% -4% -10% 4%;background:var(--c);border-radius:42% 58% 63% 37%/45% 41% 59% 55%;border:2.5px solid var(--ink);z-index:0}}
+.pic svg{{position:relative;z-index:1;width:100%;height:auto;border:2.5px solid var(--ink);border-radius:var(--r);box-shadow:var(--sh);transform:rotate(-1.5deg)}}
 .path:nth-child(even) .pic svg{{transform:rotate(1.5deg)}}
 .lvl{{color:var(--ink);font:700 .75rem ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--ink);border-radius:99px;padding:.2rem .6rem;background:#fff}}
 .lvl.beginner{{background:#c9f0cf}}.lvl.intermediate{{background:#ffe9a8}}.lvl.advanced{{background:#ffc9bd}}
 /* directory */
-.controls{{display:grid;grid-template-columns:2fr repeat(6,1fr);gap:var(--s2);margin:var(--s4) 0;background:#fff;border:3.5px solid var(--ink);border-radius:22px;padding:var(--s2);box-shadow:var(--sh)}}
+.controls{{display:grid;grid-template-columns:2fr repeat(6,1fr);gap:var(--s2);margin:var(--s4) 0;background:#fff;border:2.5px solid var(--ink);border-radius:22px;padding:var(--s2);box-shadow:var(--sh)}}
 .controls input,.controls select{{font:inherit;background:var(--cream);color:var(--ink);border:2px solid transparent;border-radius:10px;padding:.65rem .7rem;min-width:0}}
 .controls input:focus,.controls select:focus{{border-color:var(--plum);outline:none}}
 .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:var(--s4) var(--s3)}}
-.card{{position:relative;background:#fff;border:3.5px solid var(--ink);border-radius:var(--r) var(--r) var(--r) 6px;padding:var(--s4);display:flex;flex-direction:column;gap:.5rem;transition:transform .16s,box-shadow .16s;box-shadow:var(--sh)}}
-.card:before{{content:"";position:absolute;right:-3px;top:-3px;width:54px;height:54px;background:var(--c);border:3.5px solid var(--ink);border-radius:0 var(--r) 0 40px}}
+.card{{position:relative;background:#fff;border:2.5px solid var(--ink);border-radius:var(--r) var(--r) var(--r) 6px;padding:var(--s4);display:flex;flex-direction:column;gap:.5rem;transition:transform .16s,box-shadow .16s;box-shadow:var(--sh)}}
+.card:before{{content:"";position:absolute;right:-3px;top:-3px;width:54px;height:54px;background:var(--c);border:2.5px solid var(--ink);border-radius:0 var(--r) 0 40px}}
 .card:hover{{transform:translate(-3px,-4px);box-shadow:7px 8px 0 var(--ink)}}
 .card .cat{{font:700 .75rem ui-monospace,monospace;text-transform:uppercase;letter-spacing:.06em;display:flex;gap:.35rem;align-items:center;color:var(--mut)}}
 .card h3 a{{text-decoration:none}}.card h3 a:after{{content:"";position:absolute;inset:0}}.card p{{margin:0;color:var(--mut);font-size:.95rem}}
@@ -114,9 +114,9 @@ header nav a{{text-decoration:none;font-weight:600;white-space:nowrap;font-size:
 .empty{{grid-column:1/-1;text-align:center;padding:var(--s5);border:3px dashed var(--ink);border-radius:var(--r);background:var(--paper)}}
 .empty svg{{width:180px;height:auto}}
 .dirbar{{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:var(--s3)}}.dirbar p{{margin:0}}
-.seg{{display:inline-flex;border:3.5px solid var(--ink);border-radius:14px;overflow:hidden;background:#fff;box-shadow:3px 3px 0 var(--ink)}}.seg button{{font:700 .9rem "Space Grotesk";border:0;background:none;padding:.5rem .9rem;display:flex;gap:.35rem;align-items:center;cursor:pointer;color:var(--ink)}}.seg button[aria-pressed=true]{{background:var(--ink);color:var(--cream)}}
+.seg{{display:inline-flex;border:2.5px solid var(--ink);border-radius:14px;overflow:hidden;background:#fff;box-shadow:3px 3px 0 var(--ink)}}.seg button{{font:700 .9rem "Space Grotesk";border:0;background:none;padding:.5rem .9rem;display:flex;gap:.35rem;align-items:center;cursor:pointer;color:var(--ink)}}.seg button[aria-pressed=true]{{background:var(--ink);color:var(--cream)}}
 .group{{margin:var(--s5) 0}}.ghead{{display:grid;grid-template-columns:150px 1fr auto;gap:var(--s4);align-items:center;margin-bottom:var(--s3);padding-bottom:var(--s3);border-bottom:3px solid var(--ink)}}
-.ghead .gart{{width:150px;height:auto;border:3.5px solid var(--ink);border-radius:16px;transform:rotate(-2deg);box-shadow:var(--sh)}}.ghead h3{{font-size:1.6rem}}.ghead a{{font-weight:600;font-size:.9rem}}
+.ghead .gart{{width:150px;height:auto;border:2.5px solid var(--ink);border-radius:16px;transform:rotate(-2deg);box-shadow:var(--sh)}}.ghead h3{{font-size:1.6rem}}.ghead a{{font-weight:600;font-size:.9rem}}
 .gcount{{font:700 3rem/1 "Space Grotesk";color:var(--c);-webkit-text-stroke:2px var(--ink)}}
 .dir.grid .items{{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:var(--s4) var(--s3)}}
 .dir.list .items{{display:grid;grid-template-columns:1fr 1fr;gap:0 var(--s5)}}
@@ -126,9 +126,9 @@ header nav a{{text-decoration:none;font-weight:600;white-space:nowrap;font-size:
 @media (max-width:760px){{.dir.list .items{{grid-template-columns:1fr}}.ghead{{grid-template-columns:90px 1fr auto;gap:var(--s3)}}.ghead .gart{{width:90px}}.ghead h3{{font-size:1.2rem}}.gcount{{font-size:2rem}}.dirbar{{flex-wrap:wrap}}}}
 .age{{display:inline-flex;align-items:center;font:700 .72rem ui-monospace,monospace;letter-spacing:.03em;padding:.18rem .55rem;border:2px solid var(--ink);border-radius:8px;color:var(--ink);text-decoration:none;transform:rotate(-2deg);box-shadow:2px 2px 0 var(--ink)}}
 .age.a-kids{{background:#ffd76a}}.age.a-teens{{background:#a9dcff}}.age.a-adults{{background:#9fe6dc}}.meta .age:nth-child(even){{transform:rotate(2deg)}}
-.band-who{{background:var(--tomato);border-block:3.5px solid var(--ink)}}.band-who .eyebrow{{color:var(--ink)}}.band-who h2,.band-who p.mut{{color:var(--ink)}}
+.band-who{{background:radial-gradient(50% 80% at 10% 10%,#ffc2ae 0,transparent 70%),radial-gradient(50% 80% at 90% 90%,#ffd98a 0,transparent 70%),#ff8d72}}.band-who .eyebrow{{color:var(--ink)}}.band-who h2,.band-who p.mut{{color:var(--ink)}}
 .who{{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4);margin-top:var(--s4)}}
-.whob{{position:relative;display:flex;flex-direction:column;background:#fff;border:3.5px solid var(--ink);border-radius:28px;box-shadow:7px 7px 0 var(--ink);overflow:hidden;text-decoration:none;min-height:120px;transition:transform .18s,box-shadow .18s}}
+.whob{{position:relative;display:flex;flex-direction:column;background:#fff;border:2.5px solid var(--ink);border-radius:28px;box-shadow:7px 7px 0 var(--ink);overflow:hidden;text-decoration:none;min-height:120px;transition:transform .18s,box-shadow .18s}}
 .whob .wart{{width:100%;height:auto;display:block;border-bottom:3.5px solid var(--ink)}}.whob .wlbl{{padding:1rem 1.2rem 1.2rem;display:flex;flex-direction:column}}.whob b{{font:700 1.7rem "Space Grotesk"}}.whob small{{font-weight:600;color:var(--mut);font-size:.95rem}}
 .whob .go{{position:absolute;right:14px;bottom:18px;width:48px;height:48px;border-radius:50%;background:var(--c);border:3px solid var(--ink);display:grid;place-items:center;transition:transform .2s}}
 .whob:hover{{transform:translate(-3px,-5px) rotate(-1deg);box-shadow:10px 12px 0 var(--ink);color:var(--ink)}}.whob:hover .go{{transform:rotate(-20deg) scale(1.12)}}
@@ -140,41 +140,66 @@ header nav a{{text-decoration:none;font-weight:600;white-space:nowrap;font-size:
 .stage .chip{{animation:bob 4s ease-in-out infinite}}.c2{{animation-delay:-1.3s!important;--rot:-5deg}}.c3{{animation-delay:-2.6s!important;--rot:3deg}}.c1{{--rot:4deg}}
 .spark{{position:absolute;width:34px;height:34px;animation:spin 9s linear infinite}}
 .band-color{{background:var(--c);border-block:3.5px solid var(--ink)}}
-.steps-simple{{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--s3);list-style:none;padding:0}}.steps-simple li{{counter-increment:s;background:#fff;border:3.5px solid var(--ink);border-radius:22px;padding:1.2rem;box-shadow:var(--sh);font-size:1.05rem}}.steps-simple li:before{{content:"Step " counter(s);display:block;font:700 .8rem ui-monospace,monospace;color:var(--tink);margin-bottom:.3rem;letter-spacing:.08em;text-transform:uppercase}}
-.parent{{background:#fff;border:3.5px solid var(--ink);border-left:14px solid var(--teal);border-radius:22px;padding:1.4rem 1.6rem;box-shadow:var(--sh)}}.parent h2{{font-size:1.5rem}}.parent li{{margin:.4rem 0}}
+.steps-simple{{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--s3);list-style:none;padding:0}}.steps-simple li{{counter-increment:s;background:#fff;border:2.5px solid var(--ink);border-radius:22px;padding:1.2rem;box-shadow:var(--sh);font-size:1.05rem}}.steps-simple li:before{{content:"Step " counter(s);display:block;font:700 .8rem ui-monospace,monospace;color:var(--tink);margin-bottom:.3rem;letter-spacing:.08em;text-transform:uppercase}}
+.parent{{background:#fff;border:2.5px solid var(--ink);border-left:14px solid var(--teal);border-radius:22px;padding:1.4rem 1.6rem;box-shadow:var(--sh)}}.parent h2{{font-size:1.5rem}}.parent li{{margin:.4rem 0}}
 .agepick{{display:flex;gap:.6rem;flex-wrap:wrap;margin:var(--s3) 0}}.agepick a{{min-height:48px;display:inline-flex;align-items:center;padding:.5rem 1rem;border:3px solid var(--ink);border-radius:14px;background:#fff;font-weight:700;text-decoration:none;box-shadow:3px 3px 0 var(--ink)}}.agepick a[aria-current]{{background:var(--ink);color:var(--cream)}}
 header nav a{{min-height:44px;display:inline-flex;align-items:center}}
 @media (max-width:860px){{.who{{grid-template-columns:1fr}}.whob{{flex-direction:row;align-items:center}}.whob .wart{{width:38%;border-bottom:0;border-right:3.5px solid var(--ink);align-self:stretch;object-fit:cover}}.whob b{{font-size:1.35rem}}.whob .go{{width:40px;height:40px;right:10px;bottom:auto}}}}
 @media (prefers-reduced-motion:reduce){{.stage .chip,.spark{{animation:none}}}}
+/* ---- 2026 modern layer ---- */
+.mhero{{position:relative;overflow:hidden;padding:clamp(2rem,5vw,4.5rem) 0 clamp(2.5rem,6vw,5rem)}}
+.mesh{{position:absolute;inset:-20%;z-index:-1;background:radial-gradient(40% 50% at 15% 20%,#b9a4ff 0,transparent 70%),radial-gradient(35% 45% at 85% 15%,#ffb199 0,transparent 70%),radial-gradient(40% 50% at 75% 85%,#8fe3d6 0,transparent 70%),radial-gradient(30% 40% at 30% 90%,#ffe08a 0,transparent 70%),#f7f2ff;filter:saturate(1.05)}}
+.mgrid{{display:grid;grid-template-columns:.95fr 1.2fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center}}
+.mcopy h1{{font-size:clamp(2.4rem,6vw,4.4rem);letter-spacing:-.035em;margin:.8rem 0 1rem}}.grad{{background:linear-gradient(95deg,#5b2fe0,#d63a5e 60%,#c4461a);-webkit-background-clip:text;background-clip:text;color:transparent}}
+.mcopy .lead{{font-size:1.2rem;color:#46405e;max-width:32em}}
+.newpill{{display:inline-flex;gap:.5rem;align-items:center;font-size:.88rem;font-weight:600;background:#ffffffb3;backdrop-filter:blur(8px);border:1px solid #ffffff;border-radius:999px;padding:.35rem .9rem .35rem .4rem;box-shadow:0 6px 20px -10px #4b2fb366}}.newpill b{{background:#5b3fd9;color:#fff;border-radius:999px;padding:.1rem .55rem;font-size:.78rem}}
+.glass{{background:#ffffffbf;backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);border:1px solid #ffffffee;border-radius:28px;box-shadow:0 30px 60px -30px #3b1f9e66,0 2px 6px #1b16300d}}
+.pfwrap{{padding:.4rem;margin-top:1.4rem}}.pfwrap .pf{{background:transparent;border:0;box-shadow:none;padding:1rem}}
+.pfwrap .pf input[type=text]{{background:#fff;border:2px solid #d9d0f5;border-radius:18px;box-shadow:inset 0 1px 2px #0000000d}}.pfwrap .pf input[type=text]:focus{{border-color:#6a3df0;outline:3px solid #6a3df055;outline-offset:1px}}
+.pfwrap .btn{{background:linear-gradient(135deg,#6a3df0,#5b3fd9);color:#fff;border:0;box-shadow:0 10px 24px -10px #5b3fd9}}.pfwrap .btn:hover{{color:#fff;box-shadow:0 14px 30px -10px #5b3fd9}}
+.pfwrap .agetog button{{border:2px solid #d9d0f5;background:#fff;border-radius:12px}}.pfwrap .agetog button[aria-pressed=true]{{background:#1b1630;border-color:#1b1630}}.pfwrap .chip{{border:1.5px solid #d9d0f5;background:#ffffffcc}}.pfwrap .chip:hover{{background:#fff3c9;border-color:#f2b134}}
+.stats{{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:1.1rem;font-weight:600}}.stats a{{text-decoration:none;display:inline-flex;gap:.35rem;align-items:center}}
+.mart{{position:relative;margin-right:clamp(-4rem,-4vw,0rem);align-self:start;margin-top:clamp(0rem,6vw,5rem)}}.pfwrap .chip:nth-child(n+7){{display:none}}.heroimg img{{display:block;width:100%;height:auto;border-radius:32px;box-shadow:0 40px 80px -30px #3b1f9e80,0 0 0 1px #ffffff99;animation:hfloat 7s ease-in-out infinite}}
+@keyframes hfloat{{50%{{transform:translateY(-12px)}}}}
+.float{{position:absolute;display:inline-flex;gap:.4rem;align-items:center;font:600 .9rem Inter;background:#ffffffd9;backdrop-filter:blur(10px);border:1px solid #fff;border-radius:999px;padding:.5rem .9rem;box-shadow:0 12px 30px -12px #3b1f9e88;animation:bob 5s ease-in-out infinite}}.f1{{left:-14px;top:12%}}.f2{{right:-10px;bottom:10%;animation-delay:-2s}}
+.how{{padding:clamp(2.5rem,6vw,4.5rem) var(--s3)}}.howrow{{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4);margin-top:var(--s4)}}
+.hstep{{position:relative;background:#fff;border-radius:28px;padding:1.4rem 1.5rem 1.6rem;box-shadow:0 24px 50px -30px #3b1f9e55,0 0 0 1px #ece6fb;transition:transform .2s}}.hstep:hover{{transform:translateY(-6px)}}
+.hstep .clay img{{width:96px;height:96px;margin:-.4rem 0 .4rem -.4rem;filter:drop-shadow(0 10px 14px #3b1f9e33);transition:transform .3s cubic-bezier(.3,1.6,.5,1)}}.hstep:hover .clay img{{transform:rotate(-8deg) scale(1.08)}}
+.hn{{position:absolute;right:1.2rem;top:1.1rem;font:700 2.6rem/1 "Space Grotesk";color:#ece6fb}}.hstep h3{{font-size:1.35rem;margin-bottom:.4rem}}.hstep p{{margin:0;color:var(--mut)}}
+.famband{{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center;padding-block:clamp(2rem,5vw,4rem)}}.famimg img{{display:block;width:100%;height:auto;border-radius:32px;box-shadow:0 30px 70px -30px #e2486b88}}
+.famband .cta{{display:flex;gap:var(--s3);flex-wrap:wrap;margin-top:var(--s4)}}
+.tclay{{position:absolute;left:10px;top:8px;width:64px;height:64px;filter:drop-shadow(0 6px 10px #0004);z-index:2;transition:transform .3s cubic-bezier(.3,1.6,.5,1)}}.tile:hover .tclay{{transform:rotate(-10deg) scale(1.1)}}
+@media (max-width:860px){{.pfwrap .chip:nth-child(n+5){{display:none}}.mgrid,.famband{{grid-template-columns:1fr}}.mart{{order:-1}}.howrow{{grid-template-columns:1fr}}.f1{{left:6px}}.f2{{right:6px}}.mcopy h1{{margin-top:.6rem}}}}
+@media (prefers-reduced-motion:reduce){{.heroimg img,.float{{animation:none}}}}
 /* showcase stack */
 .stack{{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--s5)}}
-.sc{{position:relative;background:#fff;border:3.5px solid var(--ink);border-radius:var(--r);padding:var(--s4);box-shadow:var(--sh)}}.stack{{isolation:isolate}}.scimg{{float:right;width:110px;height:auto;margin:0 0 .5rem 1rem;border:3.5px solid var(--ink);border-radius:14px;transform:rotate(3deg)}}
-.sc:before,.sc:after{{content:"";position:absolute;inset:0;border:3.5px solid var(--ink);border-radius:var(--r);z-index:-1}}
+.sc{{position:relative;background:#fff;border:2.5px solid var(--ink);border-radius:var(--r);padding:var(--s4);box-shadow:var(--sh)}}.stack{{isolation:isolate}}.scimg{{float:right;width:110px;height:auto;margin:0 0 .5rem 1rem;border:2.5px solid var(--ink);border-radius:14px;transform:rotate(3deg)}}
+.sc:before,.sc:after{{content:"";position:absolute;inset:0;border:2.5px solid var(--ink);border-radius:var(--r);z-index:-1}}
 .sc:before{{background:var(--mustard);transform:rotate(-3deg) translate(-6px,6px)}}.sc:after{{background:var(--teal);transform:rotate(2.5deg) translate(8px,10px);z-index:-2}}
-.vid{{aspect-ratio:16/9;border:3.5px solid var(--ink);border-radius:14px;background:var(--ink) repeating-linear-gradient(0deg,#ffffff08 0 2px,transparent 2px 4px);color:var(--cream);display:grid;place-items:center;text-align:center;margin:var(--s3) 0;overflow:hidden}}
+.vid{{aspect-ratio:16/9;border:2.5px solid var(--ink);border-radius:14px;background:var(--ink) repeating-linear-gradient(0deg,#ffffff08 0 2px,transparent 2px 4px);color:var(--cream);display:grid;place-items:center;text-align:center;margin:var(--s3) 0;overflow:hidden}}
 .vid video{{width:100%;height:100%;object-fit:cover}}
 .slot.solid{{border-style:solid;background:var(--paper);color:var(--ink)}}.vid.portrait{{aspect-ratio:390/590;max-width:340px;margin-inline:auto}}
 .slot{{border:2px dashed #1b163055;border-radius:12px;padding:.6rem .8rem;margin:.4rem 0;color:var(--mut);display:flex;gap:.5rem}}
 /* ticket sponsor */
-.ticket{{display:grid;grid-template-columns:auto 1fr auto;gap:var(--s4);align-items:center;background:var(--mustard);border:3.5px solid var(--ink);border-radius:18px;padding:var(--s4) var(--s5);box-shadow:var(--sh);
+.ticket{{display:grid;grid-template-columns:auto 1fr auto;gap:var(--s4);align-items:center;background:var(--mustard);border:2.5px solid var(--ink);border-radius:18px;padding:var(--s4) var(--s5);box-shadow:var(--sh);
 -webkit-mask:radial-gradient(circle 16px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 16px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;margin:var(--s5) 0}}
 .ticket .stub{{font:700 .8rem ui-monospace,monospace;writing-mode:vertical-rl;transform:rotate(180deg);border-right:3px dashed var(--ink);padding-left:var(--s3);letter-spacing:.15em}}
 /* newsletter blob */
-.news{{position:relative;background:#5b3fd9;color:#fff;border:3.5px solid var(--ink);border-radius:46px 18px 46px 18px;padding:var(--s5);box-shadow:8px 8px 0 var(--ink);overflow:hidden}}
-.news:after{{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;background:var(--tomato);border:3.5px solid var(--ink);border-radius:50%}}
+.news{{position:relative;background:#5b3fd9;color:#fff;border:2.5px solid var(--ink);border-radius:46px 18px 46px 18px;padding:var(--s5);box-shadow:8px 8px 0 var(--ink);overflow:hidden}}
+.news:after{{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;background:var(--tomato);border:2.5px solid var(--ink);border-radius:50%}}
 .news>*{{position:relative;z-index:1}}.news form{{display:flex;gap:var(--s2);flex-wrap:wrap;max-width:520px}}
-.news input{{flex:1 1 220px;font:inherit;padding:.8rem 1rem;border:3.5px solid var(--ink);border-radius:14px}}
+.news input{{flex:1 1 220px;font:inherit;padding:.8rem 1rem;border:2.5px solid var(--ink);border-radius:14px}}
 .soon{{font:700 .7rem ui-monospace,monospace;background:var(--mustard);color:var(--ink);padding:.2rem .5rem;border-radius:6px;vertical-align:middle;border:2px solid var(--ink)}}
 /* page bits */
 .crumbs{{font-size:.9rem;color:var(--mut);margin:var(--s4) 0 var(--s3);display:flex;gap:.3rem;align-items:center;flex-wrap:wrap}}.crumbs a{{color:var(--mut)}}
 .phead{{display:grid;grid-template-columns:1.4fr 1fr;gap:var(--s5);align-items:center;margin-bottom:var(--s5)}}
-.phead>svg{{width:100%;height:auto;border:3.5px solid var(--ink);border-radius:var(--r);box-shadow:var(--sh);transform:rotate(1.5deg)}}
-.facts{{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:3.5px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:var(--sh)}}
+.phead>svg{{width:100%;height:auto;border:2.5px solid var(--ink);border-radius:var(--r);box-shadow:var(--sh);transform:rotate(1.5deg)}}
+.facts{{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:2.5px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:var(--sh)}}
 .facts th,.facts td{{padding:.75rem 1rem;text-align:left;vertical-align:top;border-bottom:1.5px solid #1b163022}}.facts tr:last-child>*{{border-bottom:0}}.facts th{{background:var(--paper);width:30%;font-family:"Space Grotesk"}}
 .note{{background:#fff;border-left:6px solid var(--teal);border-radius:0 14px 14px 0;padding:var(--s3) var(--s4);margin:var(--s4) 0}}
-ol.steps{{list-style:none;counter-reset:s;padding:0}}ol.steps li{{counter-increment:s;position:relative;padding:var(--s4) var(--s4) var(--s4) 4.5rem;margin:var(--s3) 0;background:#fff;border:3.5px solid var(--ink);border-radius:18px;box-shadow:var(--sh)}}
+ol.steps{{list-style:none;counter-reset:s;padding:0}}ol.steps li{{counter-increment:s;position:relative;padding:var(--s4) var(--s4) var(--s4) 4.5rem;margin:var(--s3) 0;background:#fff;border:2.5px solid var(--ink);border-radius:18px;box-shadow:var(--sh)}}
 ol.steps li:nth-child(even){{margin-left:var(--s5)}}
-ol.steps li:before{{content:counter(s);position:absolute;left:1rem;top:1rem;width:2.4rem;height:2.4rem;display:grid;place-items:center;font:700 1.2rem "Space Grotesk";background:var(--mustard);border:3.5px solid var(--ink);border-radius:10px}}
+ol.steps li:before{{content:counter(s);position:absolute;left:1rem;top:1rem;width:2.4rem;height:2.4rem;display:grid;place-items:center;font:700 1.2rem "Space Grotesk";background:var(--mustard);border:2.5px solid var(--ink);border-radius:10px}}
 .prose{{max-width:760px}}.prose h2{{margin-top:var(--s5)}}
 footer{{background:var(--ink);color:var(--cream);padding:var(--s5) 0 var(--s4);margin-top:var(--s6)}}footer a{{color:var(--cream)}}
 .fgrid{{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:var(--s5)}}.fgrid h4{{font:700 .8rem ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--mustard);margin:0 0 .6rem}}
@@ -225,7 +250,7 @@ exec(open(ROOT/"_build/teach.py").read(),globals())
 def build():
     if OUT.exists():shutil.rmtree(OUT)
     OUT.mkdir();(OUT/"style.css").write_text(CSS);(OUT/".nojekyll").write_text("")
-    shutil.copytree(ASSETS/"fonts",OUT/"fonts")
+    shutil.copytree(ASSETS/"fonts",OUT/"fonts");shutil.copytree(ASSETS/"img",OUT/"img")
     if (ASSETS/"media").exists():shutil.copytree(ASSETS/"media",OUT/"media")
     if (ASSETS/"og").exists():shutil.copytree(ASSETS/"og",OUT/"og")
     if (ASSETS/"games").exists():shutil.copytree(ASSETS/"games",OUT/"games")
@@ -233,20 +258,27 @@ def build():
         if (ASSETS/f).exists():shutil.copy(ASSETS/f,OUT/f)
     (OUT/"favicon.svg").write_text(logo(40).replace(' height="40"',''))
     (OUT/"logo.svg").write_text(logo(40).replace(' height="40"',''))
-    (OUT/"CREDITS.txt").write_text(f"{SITE_NAME} credits\n\nFonts: Inter (The Inter Project Authors) and Space Grotesk (Florian Karsten), SIL Open Font License 1.1 — see fonts/OFL-*.txt\nIcons: Lucide (https://lucide.dev), ISC License — see icons-LICENSE.txt\nIllustrations, logo and OG images: original work made for this site.\n")
+    (OUT/"CREDITS.txt").write_text(f"{SITE_NAME} credits\n\nFonts: Inter (The Inter Project Authors) and Space Grotesk (Florian Karsten), SIL Open Font License 1.1 — see fonts/OFL-*.txt\nIcons: Lucide (https://lucide.dev), ISC License — see icons-LICENSE.txt\nIllustrations, logo and OG images: original work made for this site.\nClay-style 3D images (hero, parent-and-kid, feature icons): AI-generated original artwork commissioned for and owned by BuildGames Hub.\n")
     shutil.copy(ASSETS/"icons/LICENSE-lucide.txt",OUT/"icons-LICENSE.txt")
     plats=sorted({p for t in tools for p in t["platforms"]})
     count={k:sum(t["category"]==k for t in tools) for k in CATS}
-    tiles="".join(f'<a class="tile" style="--c:{c}" href="categories/{k}.html">{ART[k].replace("<svg ","<svg class=\"art\" preserveAspectRatio=\"xMidYMid slice\" ",1)}<span class="n">{count[k]:02d} TOOLS</span><span class="lbl">{icon(i)} {n}</span></a>' for k,(n,i,c) in CATS.items())
+    tiles="".join(f'<a class="tile" style="--c:{c}" href="categories/{k}.html">{ART[k].replace("<svg ","<svg class=\"art\" preserveAspectRatio=\"xMidYMid slice\" ",1)}<span class="n">{count[k]:02d} TOOLS</span>{f'<img class="tclay" src="img/icon-{dict(ai="ai",engine="engines",art="art",publish="publish")[k]}-128.webp" alt="" width="64" height="64" loading="lazy">' if k in ("ai","engine","art","publish") else ""}<span class="lbl">{icon(i)} {n}</span></a>' for k,(n,i,c) in CATS.items())
     feat="".join(f'<article class="feat" style="--c:{CATS[BY[s]["category"]][2]}"><div class="top"><span>{initials(BY[s]["name"])}</span></div><div class="bd"><span class="lvl {BY[s]["skill"]}">{SK[BY[s]["skill"]]}</span><h3 style="margin:.6rem 0 .3rem"><a href="tools/{s}.html">{E(BY[s]["name"])}</a></h3><p class="mut" style="margin:0;font-size:.92rem">{E(BY[s]["blurb"])}</p></div></article>' for s in FEATURED if s in BY)
     paths="".join(f'<div class="path" style="--c:{c}"><div class="pic">{ART[s]}</div><div><span class="lvl {l}">{SK[l]}</span><h3 style="font-size:1.8rem;margin:.7rem 0">{E(t)}</h3><p class="mut">{len(st)} steps · {", ".join(dict.fromkeys(BY[x]["name"] for _,_,xs in st for x in xs[:1]))}</p><a class="btn alt" href="paths/{s}.html">Start the path {icon("arrow-right")}</a></div></div>' for (s,t,l,st),c in zip(PATHS,[P["sky"],P["plum"],P["tomato"],P["leaf"]]))
     shw="".join(f'<article class="sc">{f"<img src=\"{E(s["poster"])}\" alt=\"{E(s["title"])} gameplay\" width=390 height=590 loading=lazy class=scimg>" if s.get("poster") else ""}<span class="eyebrow">Case study · built with {", ".join(s["built_with"])}</span><h3 style="font-size:1.6rem">{E(s["title"])}</h3><p class="mut">{E(s["summary"])}</p><a href="showcase.html#{s["slug"]}">{E(s["status"])} {icon("arrow-right",14)}</a></article>' for s in show)
     newest=sorted(tools,key=lambda t:t["added"],reverse=True)[:6]
-    body=f'''<div class="wrap"><section class="hero"><div><span class="hud">LVL 1 <i>·</i> {len(tools)} TOOLS <i>·</i> XP <span class="bar"></span></span>
-<h1 style="margin-top:var(--s4)">Describe your game. <span class="mark">Get the path.</span></h1><p class="lead">Tell us what you want to make — we'll lay out the tools, steps, tutorials and videos to build it, for kids, teens and grown-ups.</p>
-{PFFORM("","pathfinder/")}<p style="margin-top:var(--s3)"><a href="tutorials/">{icon("book-open",16)} {len(json.load(open(ROOT/"data/tutorials.json")))} tutorials</a> · <a href="videos/">{icon("play",16)} {len(json.load(open(ROOT/"data/videos.json")))} videos</a> · <a href="#tools">{icon("search",16)} {len(tools)} tools</a></p></div>
-<div class="stage" aria-hidden="true"><span class="sticker" style="left:4%;top:0">★ Kids → pros</span><svg class="spark" style="right:30%;top:-4%" viewBox="0 0 40 40"><path d="M20 2 Q20 20 38 20 Q20 20 20 38 Q20 20 2 20 Q20 20 20 2z" fill="#f2b134" stroke="#1b1630" stroke-width="3"/></svg><div class="layer blob" data-depth="10"></div><div class="layer main" data-depth="22">{ART["hero"]}</div>
-<div class="layer chip c1" data-depth="40">{icon("sparkles")} AI prototypes</div><div class="layer chip c2" data-depth="34">{icon("gamepad-2")} Ship to itch &amp; Steam</div><div class="layer chip c3" data-depth="48">{icon("cog")} Godot · Unity · Unreal</div></div></section></div>
+    def pic(name,ws,alt,cls="",sizes="100vw",eager=False):
+        return f'<picture class="{cls}"><source type="image/webp" srcset="{", ".join(f"img/{name}-{w}.webp {w}w" for w in ws)}" sizes="{sizes}"><img src="img/{name}-{ws[0]}.jpg" srcset="{", ".join(f"img/{name}-{w}.jpg {w}w" for w in ws)}" sizes="{sizes}" alt="{alt}" width="1280" height="720" {"fetchpriority=high" if eager else "loading=lazy"} decoding="async"></picture>'
+    def clay(n,alt=""):return f'<picture class="clay"><source type="image/webp" srcset="img/icon-{n}-128.webp 1x, img/icon-{n}-256.webp 2x"><img src="img/icon-{n}-128.png" srcset="img/icon-{n}-256.png 2x" alt="{alt}" width="128" height="128" loading="lazy"></picture>'
+    body=f'''<section class="mhero"><div class="mesh" aria-hidden="true"></div><div class="wrap mgrid"><div class="mcopy"><span class="newpill"><b>New</b> Pathfinder · describe a game, get the steps</span>
+<h1>Describe your game.<br><span class="grad">Get the path.</span></h1><p class="lead">Tools, step-by-step tutorials and videos for building any kind of game — for kids, teens and grown-ups.</p>
+<div class="glass pfwrap">{PFFORM("","pathfinder/")}</div><p class="stats"><a href="tutorials/">{icon("book-open",16)} {len(json.load(open(ROOT/"data/tutorials.json")))} tutorials</a><a href="videos/">{icon("play",16)} {len(json.load(open(ROOT/"data/videos.json")))} videos</a><a href="#tools">{icon("search",16)} {len(tools)} tools</a></p></div>
+<div class="mart">{pic("hero",[1280,960,640],"Clay-style illustration: a laptop showing a platformer, a floating castle island, a friendly robot, a VR headset and a tablet racing game","heroimg","(max-width:860px) 100vw, 640px",True)}<span class="float f1">{icon("sparkles",16)} AI prototypes</span><span class="float f2">{icon("gamepad-2",16)} Godot · Unity · Roblox</span></div></div></section>
+<section class="how wrap"><span class="eyebrow">How it works</span><h2>Three steps from idea to played.</h2><div class="howrow">
+<div class="hstep">{clay("ai")}<span class="hn">1</span><h3>Describe it</h3><p>Type your idea — “a cozy farming game”, “a Roblox obby”. Pathfinder picks tools that fit your age.</p></div>
+<div class="hstep">{clay("engines")}<span class="hn">2</span><h3>Build it</h3><p>Follow the steps with a written tutorial and hand-picked videos. Copy an AI starter prompt if you like.</p></div>
+<div class="hstep">{clay("publish")}<span class="hn">3</span><h3>Share it</h3><p>Publish to itch.io, Roblox or the web, show friends, and level up to your next game.</p></div></div></section>
+<section class="wrap famband"><div class="famimg">{pic("parent-kid",[1280,640],"Clay-style illustration of a parent and child building a game together on a laptop","","(max-width:860px) 100vw, 560px")}</div><div><span class="eyebrow">Families &amp; classrooms</span><h2>Make a game together.</h2><p class="lead" style="font-size:1.1rem">Short sessions, the right first tool for each age, and safety notes for grown-ups. The kid drives — you cheer.</p><div class="cta"><a class="btn" href="tutorials/make-a-game-with-your-kid.html">{icon("book-open")} Parent playbook</a><a class="btn alt" href="for-kids/">{icon("star")} Best tools for kids</a></div></div></section>
 <section class="sec band-who" id="who"><div class="wrap"><span class="eyebrow">Who's building?</span><h2>Pick your player.</h2><p class="mut" style="max-width:40em">Tell us who's making the game and we'll show tools that fit — with simple first steps.</p><div class="who">{"".join(f'<a class="whob" style="--c:{v[5]}" href="{v[2]}/">{ART["age-"+k].replace("<svg ","<svg class=\"wart\" ",1)}<span class="wlbl"><b>{v[4]}</b><small>Ages {v[1]} · {sum(k in t.get("ages",[]) for t in tools)} tools</small></span><span class="go">{icon("arrow-right",22)}</span></a>' for k,v in AGES.items())}</div></div></section>{WAVE("#fffaf2")}<section class="sec alt"><div class="wrap"><span class="eyebrow">Choose your toolbox</span><h2>Eight ways in.</h2><div class="bento">{tiles}</div></div></section>{WAVE("#fffaf2",True)}
 <section class="sec band-color" style="--c:#ffe3a3"><div class="wrap"><span class="eyebrow">Staff picks</span><h2>Great places to start.</h2></div><div class="rail wrap" tabindex="0" aria-label="Featured tools">{feat}</div></section>
 <section class="sec inkbg diag"><div class="wrap"><span class="eyebrow" style="color:var(--mustard)">Quests</span><h2>Follow a path, not a pile of tabs.</h2>{paths}</div></section>
