@@ -344,5 +344,58 @@
    "Celebrated a 'release'"
   ],
   "body": "The goal isn't a perfect game — it's a kid who knows they can make things.\n\n## 1. Start on paper (15 minutes)\nAsk: *Who is the hero? What do they want? What's in the way?* Draw the screen together. Play it with a pencil and dice. This keeps the ideas theirs.\n\n## 2. Pick a tool by age\n- **Ages 5–8:** Super Mario Maker 2 or Game Builder Garage (Switch), or ScratchJr on a tablet — lots of reading-free building.\n- **Ages 8–12:** Scratch or MakeCode Arcade in a browser. Both are free and need no install.\n- **Roblox fans:** Roblox Studio works for building; review account settings, chat and the current publishing rules together.\n- **Story lovers:** Bitsy or Twine for tiny narrative games.\n\n## 3. Short sessions, one win each\nAim for one visible change per session: \"the cat moves\", \"there's a score\", \"there's a sound\". Stop while it's still fun.\n\n## 4. Let them drive\nKeep your hands off the mouse. Ask \"what should happen?\" and \"how could we find out?\" When they're stuck, look up a short official tutorial video together.\n\n## 5. Safety basics\n- Most AI chatbots are 13+ (ChatGPT, Grok) or 18+ (Claude); with younger kids, an adult should drive any AI help.\n- Use parent-managed accounts and turn off or limit chat on platforms that have it.\n- Remind them never to put real names, schools or photos in games they share.\n\n## 6. Release day\nMake a title screen with their name, play it at dinner, and if they want, share privately with family. Then ask: *what would you make next?*\n"
+ },
+ {
+  "slug": "plan-your-first-game",
+  "title": "Plan your first game on one page",
+  "summary": "Before any tool or code: a one-page plan that keeps your first game small enough to actually finish.",
+  "time": "30–45 minutes",
+  "ages": [
+   "kids",
+   "teens",
+   "adults"
+  ],
+  "skill": "beginner",
+  "tools": [
+   "twine",
+   "scratch",
+   "godot-engine"
+  ],
+  "videos": [],
+  "next": "scratch-first-game-kids",
+  "checklist": [
+   "Wrote the game in one sentence",
+   "Picked ONE main action",
+   "Wrote how you win and how you lose",
+   "Listed 3 things you will NOT add yet",
+   "Chose a tool from the Start here page"
+  ],
+  "body": "Most first games stall because they start too big. A one-page plan fixes that. You can do this on paper.\n\n## 1. Say it in one sentence\nFill in: *\"You are a ___ who must ___ before ___.\"* Example: *\"You are a frog who must eat 10 flies before the pond freezes.\"* If you can't fit it in one sentence, the idea is too big for a first game.\n\n## 2. Pick one main action\nJump, shoot, match, steer, choose, click — pick **one**. Every great small game has one action the player does over and over. Write it down.\n\n## 3. Win, lose, restart\nWrite how the player **wins**, how they **lose**, and what happens next (usually: a \"Play again\" button). That's a complete game loop.\n\n## 4. The \"not yet\" list\nWrite three cool things you will **not** add yet (online multiplayer, a big story, 50 levels). This list protects you. You can add them in version 2.\n\n## 5. Sketch one screen\nDraw the main screen: where the player is, where the score is, what the danger looks like. Boxes and stick figures are fine.\n\n## 6. Pick a tool and a deadline\nUse the [Start here](../start.html) page to pick a tool that fits your age and device, and give yourself a short deadline — one weekend is perfect. Finished and small beats huge and unfinished.\n"
+ },
+ {
+  "slug": "free-assets-licenses",
+  "title": "Use free art and sound without breaking the rules",
+  "summary": "Where to find free game art and sound, what CC0 and CC BY mean, and how to keep a simple credits file.",
+  "time": "30 minutes",
+  "ages": [
+   "teens",
+   "adults"
+  ],
+  "skill": "beginner",
+  "tools": [
+   "kenney-assets",
+   "audacity",
+   "bfxr-jsfxr"
+  ],
+  "videos": [],
+  "next": "publish-on-itch",
+  "checklist": [
+   "Know the difference between CC0, CC BY and CC BY-NC",
+   "Saved the license with every asset you downloaded",
+   "Created a CREDITS.txt file",
+   "Checked no NC (non-commercial) assets if you plan to sell",
+   "Made at least one sound yourself"
+  ],
+  "body": "Free assets let you make a good-looking game fast — as long as you follow each asset's license. This isn't legal advice, just the basics most makers need.\n\n## 1. The three licenses you'll see most\n- **CC0 (public domain):** use it for anything, no credit required (crediting is still kind).\n- **CC BY (Attribution):** free to use, even commercially, but you **must credit** the creator.\n- **CC BY-NC (Non-Commercial):** credit required **and** you can't use it in anything you earn money from.\n\nIf an asset has no clear license, don't use it.\n\n## 2. Good places to start\n- **Kenney** — thousands of game art and audio packs released as CC0.\n- **Poly Haven** and **ambientCG** — CC0 textures, HDRIs and (on Poly Haven) 3D models.\n- **Freesound** — sound effects where *each sound* has its own license (CC0, CC BY or CC BY-NC). Check every one.\n- **OpenGameArt** and **itch.io** free assets — licenses vary by creator; read each page.\n\nSee the full lists on our [free art](../resources/art.html) and [free sound](../resources/sound.html) pages.\n\n## 3. Keep a credits file from day one\nEvery time you download something, add a line to `CREDITS.txt`:\n\n```text\nJump sound — \"boing.wav\" by user123, Freesound, CC BY 4.0, https://freesound.org/s/12345/\nTiles — Kenney \"Pixel Platformer\", CC0, https://kenney.nl\n```\n\nPut the same credits on your game's title or about screen.\n\n## 4. Make your own sounds\nTools like jsfxr generate retro sound effects in seconds, and Audacity can record and trim your own voice or objects around the house. Sounds you make yourself are 100% yours.\n\n## 5. Selling later?\nIf you might sell the game, remove anything marked NC before release, and double-check every CC BY credit is present.\n"
  }
 ]

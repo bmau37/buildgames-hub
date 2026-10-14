@@ -458,5 +458,69 @@ Keep your hands off the mouse. Ask "what should happen?" and "how could we find 
 ## 6. Release day
 Make a title screen with their name, play it at dinner, and if they want, share privately with family. Then ask: *what would you make next?*
 """)
+
+tut(slug="plan-your-first-game",title="Plan your first game on one page",
+summary="Before any tool or code: a one-page plan that keeps your first game small enough to actually finish.",
+time="30–45 minutes",ages=["kids","teens","adults"],skill="beginner",tools=["twine","scratch","godot-engine"],
+videos=[],next="scratch-first-game-kids",
+checklist=["Wrote the game in one sentence","Picked ONE main action","Wrote how you win and how you lose","Listed 3 things you will NOT add yet","Chose a tool from the Start here page"],
+body="""Most first games stall because they start too big. A one-page plan fixes that. You can do this on paper.
+
+## 1. Say it in one sentence
+Fill in: *"You are a ___ who must ___ before ___."* Example: *"You are a frog who must eat 10 flies before the pond freezes."* If you can't fit it in one sentence, the idea is too big for a first game.
+
+## 2. Pick one main action
+Jump, shoot, match, steer, choose, click — pick **one**. Every great small game has one action the player does over and over. Write it down.
+
+## 3. Win, lose, restart
+Write how the player **wins**, how they **lose**, and what happens next (usually: a "Play again" button). That's a complete game loop.
+
+## 4. The "not yet" list
+Write three cool things you will **not** add yet (online multiplayer, a big story, 50 levels). This list protects you. You can add them in version 2.
+
+## 5. Sketch one screen
+Draw the main screen: where the player is, where the score is, what the danger looks like. Boxes and stick figures are fine.
+
+## 6. Pick a tool and a deadline
+Use the [Start here](../start.html) page to pick a tool that fits your age and device, and give yourself a short deadline — one weekend is perfect. Finished and small beats huge and unfinished.
+""")
+tut(slug="free-assets-licenses",title="Use free art and sound without breaking the rules",
+summary="Where to find free game art and sound, what CC0 and CC BY mean, and how to keep a simple credits file.",
+time="30 minutes",ages=["teens","adults"],skill="beginner",tools=["kenney-assets","audacity","bfxr-jsfxr"],
+videos=[],next="publish-on-itch",
+checklist=["Know the difference between CC0, CC BY and CC BY-NC","Saved the license with every asset you downloaded","Created a CREDITS.txt file","Checked no NC (non-commercial) assets if you plan to sell","Made at least one sound yourself"],
+body="""Free assets let you make a good-looking game fast — as long as you follow each asset's license. This isn't legal advice, just the basics most makers need.
+
+## 1. The three licenses you'll see most
+- **CC0 (public domain):** use it for anything, no credit required (crediting is still kind).
+- **CC BY (Attribution):** free to use, even commercially, but you **must credit** the creator.
+- **CC BY-NC (Non-Commercial):** credit required **and** you can't use it in anything you earn money from.
+
+If an asset has no clear license, don't use it.
+
+## 2. Good places to start
+- **Kenney** — thousands of game art and audio packs released as CC0.
+- **Poly Haven** and **ambientCG** — CC0 textures, HDRIs and (on Poly Haven) 3D models.
+- **Freesound** — sound effects where *each sound* has its own license (CC0, CC BY or CC BY-NC). Check every one.
+- **OpenGameArt** and **itch.io** free assets — licenses vary by creator; read each page.
+
+See the full lists on our [free art](../resources/art.html) and [free sound](../resources/sound.html) pages.
+
+## 3. Keep a credits file from day one
+Every time you download something, add a line to `CREDITS.txt`:
+
+```text
+Jump sound — "boing.wav" by user123, Freesound, CC BY 4.0, https://freesound.org/s/12345/
+Tiles — Kenney "Pixel Platformer", CC0, https://kenney.nl
+```
+
+Put the same credits on your game's title or about screen.
+
+## 4. Make your own sounds
+Tools like jsfxr generate retro sound effects in seconds, and Audacity can record and trim your own voice or objects around the house. Sounds you make yourself are 100% yours.
+
+## 5. Selling later?
+If you might sell the game, remove anything marked NC before release, and double-check every CC BY credit is present.
+""")
 pathlib.Path(__file__).resolve().parent.parent.joinpath("data/tutorials.json").write_text(json.dumps(T,indent=1,ensure_ascii=False))
 print(len(T))

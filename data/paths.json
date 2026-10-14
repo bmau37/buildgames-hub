@@ -498,7 +498,10 @@
    "poker",
    "hearthstone",
    "tcg",
-   "board game"
+   "board game",
+   "chess",
+   "checkers",
+   "board"
   ],
   "dim": "2d",
   "stack": {

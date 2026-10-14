@@ -13,7 +13,7 @@ function run(text,age){
  let best=null,bs=0,scores=[];
  for(const p of D.paths){let s=0;for(const k of p.keywords)if(has(t,k))s+=k.length>4?3:2;
   if(f.fortnite&&p.id=="uefn")s+=8;if(f.vr&&p.id=="vr")s+=8;if(f.phone&&p.id=="mobile-casual")s+=1;if(f.ai&&p.id=="html-vibe")s+=1;
-  if(f.d3&&p.dim=="3d")s+=1;if(f.d2&&p.dim=="2d")s+=1;scores.push([s,p]);if(s>bs){bs=s;best=p}}
+  if(f.d3&&p.dim=="3d")s+=1;if(f.d3&&p.dim=="2d")s-=2;if(f.d3&&/shoot/.test(t)&&p.id=="fps")s+=4;if(f.d2&&p.dim=="2d")s+=1;scores.push([s,p]);if(s>bs){bs=s;best=p}}
  scores.sort((a,b)=>b[0]-a[0]);let fallback=false;
  if(f.roblox&&bs<2){best=D.paths.find(p=>p.id=="obby");bs=2}
  if(f.fortnite&&bs<2){best=D.paths.find(p=>p.id=="uefn");bs=2}

@@ -42,7 +42,7 @@ t("idle","Idle / clicker",["idle","clicker","incremental","cookie","tycoon","tap
   "Choose the theme and the first 5 upgrades.","Click to earn, buy generators, numbers go up over time.",
   "Icons for each upgrade; satisfying button states.","Soft clicks and milestone chimes.","Offline progress, number formatting (1.2K, 3.4M), prestige.","single-file-html-game-with-ai",["html-vibe","idle"],
   "an idle clicker game where {desc}. Click to earn, upgrades and auto-generators, big-number formatting, saving to localStorage and offline progress.")
-t("card","Card / deckbuilder",["card","cards","deck","deckbuilder","deck builder","slay the spire","solitaire","poker","hearthstone","tcg","board game"],"2d",
+t("card","Card / deckbuilder",["card","cards","deck","deckbuilder","deck builder","slay the spire","solitaire","poker","hearthstone","tcg","board game","chess","checkers","board"],"2d",
   S(["scratch"],["godot-engine","twine"],["godot-engine","unity"]),
   "Prototype on paper with index cards first — fun on paper is fun on screen.","Draw/discard/play loop and one enemy.",
   "Card frames and icons; readability beats detail.","Card shuffle and play sounds.","Card balance, tooltips, animations.","single-file-html-game-with-ai",["any"],
