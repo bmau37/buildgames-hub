@@ -80,9 +80,10 @@
   "price": "paid",
   "license": "proprietary",
   "skill": "intermediate",
-  "url": "https://www.anthropic.com/claude-code",
+  "url": "https://claude.com/product/claude-code",
   "blurb": "Agentic coding tool in your terminal that edits whole game projects, runs builds and fixes errors.",
-  "added": "2026-10-13"
+  "added": "2026-10-13",
+  "note": "Included with paid Claude plans (Pro $20/mo or $17/mo billed annually, Max, Team, Enterprise) or usable with API credits; not on the free plan."
  },
  {
   "slug": "openai-codex",
@@ -95,12 +96,13 @@
    "Mac",
    "Linux"
   ],
-  "price": "paid",
+  "price": "freemium",
   "license": "proprietary",
   "skill": "intermediate",
   "url": "https://openai.com/codex/",
   "blurb": "OpenAI's coding agent for writing, refactoring and testing game code across a repository.",
-  "added": "2026-10-13"
+  "added": "2026-10-13",
+  "note": "Included across ChatGPT plans, with limited access on Free and Go; Plus is $20/mo."
  },
  {
   "slug": "cursor",
@@ -245,7 +247,8 @@
   "skill": "intermediate",
   "url": "https://unity.com/",
   "blurb": "Widely used C# engine for mobile, PC, console and XR games, with a huge asset store.",
-  "added": "2026-10-13"
+  "added": "2026-10-13",
+  "note": "Unity Personal is free if revenue + funding ≤ US$200K (prior 12 months); Unity Pro is required above that (US$2,310/seat/yr). The Runtime Fee was cancelled in Sept 2024; no royalties."
  },
  {
   "slug": "unreal-engine",
@@ -261,8 +264,9 @@
   "license": "proprietary",
   "skill": "advanced",
   "url": "https://www.unrealengine.com/",
-  "blurb": "High-end 3D engine with Blueprints visual scripting and C++; royalty applies above a revenue threshold.",
-  "added": "2026-10-13"
+  "blurb": "High-end 3D engine with Blueprints visual scripting and C++. Free to start; games pay a 5% royalty only on lifetime gross revenue above US$1M per product.",
+  "added": "2026-10-13",
+  "note": "Epic Games Store revenue is royalty-exempt. Non-game commercial users with >US$1M annual revenue need seats at US$1,850/yr."
  },
  {
   "slug": "gamemaker",
@@ -279,7 +283,8 @@
   "skill": "beginner",
   "url": "https://gamemaker.io/",
   "blurb": "Classic 2D engine behind many indie hits, free for non-commercial use.",
-  "added": "2026-10-13"
+  "added": "2026-10-13",
+  "note": "Free for non-commercial use; Professional is a one-time US$99.99 to sell games; console export needs Enterprise (US$79.99/mo or US$799.99/yr)."
  },
  {
   "slug": "defold",
@@ -311,7 +316,7 @@
   "price": "free",
   "license": "open-source",
   "skill": "advanced",
-  "url": "https://bevyengine.org/",
+  "url": "https://bevy.org/",
   "blurb": "Data-driven open-source game engine written in Rust using an ECS architecture.",
   "added": "2026-10-13"
  },
@@ -345,7 +350,8 @@
   "skill": "beginner",
   "url": "https://www.lexaloffle.com/pico-8.php",
   "blurb": "A 'fantasy console' with built-in code, sprite, map and music editors and tight, charming limits.",
-  "added": "2026-10-13"
+  "added": "2026-10-13",
+  "note": "One-time purchase of US$14.99."
  },
  {
   "slug": "roblox-studio",
@@ -374,7 +380,7 @@
   "price": "free",
   "license": "proprietary",
   "skill": "intermediate",
-  "url": "https://dev.epicgames.com/documentation/en-us/uefn",
+  "url": "https://dev.epicgames.com/documentation/fortnite/fortnite-documentation",
   "blurb": "Build and publish Fortnite islands with Unreal tools and the Verse language.",
   "added": "2026-10-13"
  },
@@ -391,7 +397,8 @@
   "skill": "beginner",
   "url": "https://www.construct.net/",
   "blurb": "Browser-based no-code 2D engine using event sheets.",
-  "added": "2026-10-13"
+  "added": "2026-10-13",
+  "note": "Free tier is limited (50 events, 2 layers, web export); personal subscription is about US$129.99/yr."
  },
  {
   "slug": "gdevelop",
@@ -409,7 +416,8 @@
   "skill": "beginner",
   "url": "https://gdevelop.io/",
   "blurb": "Open-source no-code engine for 2D and 3D games, with one-click export.",
-  "added": "2026-10-13"
+  "added": "2026-10-13",
+  "note": "Editor and engine are MIT-licensed and free; optional subscriptions add cloud builds, AI credits and online services."
  },
  {
   "slug": "rpg-maker-mz",
@@ -474,7 +482,7 @@
   "license": "open-source",
   "skill": "beginner",
   "url": "https://www.renpy.org/",
-  "blurb": "Free visual novel engine scripted in a simple Python-based language.",
+  "blurb": "Free, open-source visual novel engine (free for commercial use) that exports to desktop, mobile and web.",
   "added": "2026-10-13"
  },
  {
@@ -558,7 +566,8 @@
   "skill": "beginner",
   "url": "https://www.aseprite.org/",
   "blurb": "Beloved pixel-art and sprite animation editor; source is available to compile yourself.",
-  "added": "2026-10-13"
+  "added": "2026-10-13",
+  "note": "One-time purchase (US$19.99 on the official site/Steam)."
  },
  {
   "slug": "krita",
@@ -727,7 +736,7 @@
  {
   "slug": "bosca-ceoil-blue",
   "name": "Bosca Ceoil Blue",
-  "maker": "Community",
+  "maker": "Yuri Sizov",
   "category": "audio",
   "platforms": [
    "Windows",
@@ -738,8 +747,8 @@
   "price": "free",
   "license": "open-source",
   "skill": "beginner",
-  "url": "https://boscaceoil.net/",
-  "blurb": "Simple, open-source music maker made for game jam soundtracks.",
+  "url": "https://yurisizov.itch.io/boscaceoil-blue",
+  "blurb": "Open-source remake of the classic Bosca Ceoil — a simple music maker loved for game jam soundtracks.",
   "added": "2026-10-13"
  },
  {
@@ -817,7 +826,7 @@
   "price": "paid",
   "license": "proprietary",
   "skill": "beginner",
-  "url": "https://www.nintendo.com/",
+  "url": "https://www.nintendo.com/us/store/products/super-mario-maker-2-switch/",
   "blurb": "Design and share Mario levels — a fun intro to level design.",
   "added": "2026-10-13"
  },
@@ -832,7 +841,7 @@
   "price": "paid",
   "license": "proprietary",
   "skill": "beginner",
-  "url": "https://www.nintendo.com/",
+  "url": "https://www.nintendo.com/us/store/products/game-builder-garage-switch/",
   "blurb": "Nintendo's guided visual programming game that teaches game logic step by step.",
   "added": "2026-10-13"
  },
@@ -857,15 +866,15 @@
   "maker": "Meta",
   "category": "vr",
   "platforms": [
-   "Windows",
-   "VR"
+   "Windows"
   ],
   "price": "free",
   "license": "proprietary",
   "skill": "intermediate",
   "url": "https://developers.meta.com/horizon-worlds/",
   "blurb": "Build social VR worlds for Meta Horizon with TypeScript and desktop tools.",
-  "added": "2026-10-13"
+  "added": "2026-10-13",
+  "note": "Early access; runs via the Meta Quest Link PC app."
  },
  {
   "slug": "meta-xr-sdk-unity",
@@ -880,7 +889,7 @@
   "price": "free",
   "license": "proprietary",
   "skill": "advanced",
-  "url": "https://developers.meta.com/horizon/",
+  "url": "https://developers.meta.com/vr/",
   "blurb": "Official SDKs for building Quest VR/MR games in Unity or Unreal.",
   "added": "2026-10-13"
  },
@@ -927,7 +936,7 @@
   "license": "proprietary",
   "skill": "intermediate",
   "url": "https://partner.steamgames.com/",
-  "blurb": "Publish on Steam for a per-game app fee (US$100, recoupable after sales).",
+  "blurb": "Publish on Steam for a US$100 Steam Direct fee per game, recouped once the game earns US$1,000 in adjusted gross revenue.",
   "added": "2026-10-13"
  },
  {
@@ -957,7 +966,7 @@
   "license": "proprietary",
   "skill": "advanced",
   "url": "https://developer.apple.com/programs/",
-  "blurb": "Ship iOS games via the Apple Developer Program (US$99/year).",
+  "blurb": "Ship iOS games via the Apple Developer Program (US$99 per membership year).",
   "added": "2026-10-13"
  },
  {

@@ -9,6 +9,7 @@ SITE_NAME="BuildGames Hub"
 TAGLINE="Every way to build a game — from AI prompts to Unreal."
 BASE_URL="https://bmau37.github.io/buildgames-hub"
 SPONSOR_EMAIL="sponsor@example.com"  # placeholder
+LAST_VERIFIED="2026-10-13"
 # ------------------------------
 E=html.escape
 TODAY=datetime.date.today().isoformat()
@@ -27,13 +28,13 @@ PATHS=[("first-game-this-weekend","Make your first game this weekend","beginner"
   ("Choose a friendly tool","Godot or GDevelop for 2D; PICO-8 if you love limits.",["godot-engine","gdevelop","pico-8"]),
   ("Grab free assets","Use CC0 art and generated sound effects so you can focus on play.",["kenney-assets","bfxr-jsfxr"]),
   ("Ask AI when stuck","Paste errors into an assistant and ask it to explain, not just fix.",["claude","chatgpt"]),
-  ("Ship it","Upload a web build to itch.io and share the link.",["itch-io"])]),
+  ("Ship it","Upload a web build to itch.io (free) and share the link.",["itch-io"])]),
 ("vibe-coded-to-steam","From vibe-coded to Steam","intermediate",
  [("Prototype with an AI agent","Describe the core loop and let an agent scaffold a playable HTML5 or Godot prototype.",["claude-code","openai-codex","cursor"]),
   ("Playtest on the web","Host jam builds for friends to try.",["github-pages","itch-io"]),
   ("Move to a real engine","Rebuild or port into an engine with export targets and proper tooling.",["godot-engine","unity"]),
   ("Replace placeholder assets","Swap AI placeholders for consistent art and audio; check licenses.",["aseprite","blender","fmod"]),
-  ("Publish","Set up a Steam page early to gather wishlists.",["steamworks"])]),
+  ("Publish","Pay the US$100 Steam Direct fee and set up your store page early to gather wishlists.",["steamworks"])]),
 ("blender-to-godot-3d","Blender to Godot 3D pipeline","intermediate",
  [("Model & UV","Model low-poly assets and unwrap them.",["blender"]),
   ("Texture","Paint PBR textures or use simple palettes.",["adobe-substance-3d-painter","krita"]),
@@ -47,13 +48,13 @@ PATHS=[("first-game-this-weekend","Make your first game this weekend","beginner"
   ("Graduate to text code","Move to a real engine when ready.",["godot-engine"])])]
 GUIDES={"claude":("Build games with Claude","claude",[
  ("Chat + Artifacts","In the Claude app, ask for a small browser game (e.g. 'a single-file HTML canvas Snake game') and Claude can render it as a live Artifact you can play and iterate on."),
- ("Claude Code for real projects","Claude Code runs in your terminal, reads your project, edits multiple files and runs commands — useful for Godot, Phaser or Unity projects under version control."),
+ ("Claude Code for real projects","Claude Code runs in your terminal, reads your project, edits multiple files and runs commands — useful for Godot, Phaser or Unity projects under version control. It requires a paid Claude plan (Pro and up) or API credits."),
  ("Iterate in small steps","Ask for one feature at a time, playtest, then describe what felt wrong. Keep the game in git so you can roll back."),
  ("Ask for explanations","Have Claude explain generated code so you can maintain it yourself."),
  ("Check your assets","AI can write code quickly; art, music and fonts still need clear licenses before you ship.")],["claude","claude-code","cursor"]),
 "chatgpt":("Build games with ChatGPT & Codex","chatgpt",[
  ("ChatGPT for design & code","Use ChatGPT to brainstorm mechanics, write scripts and debug error messages; Canvas lets you edit and preview code side by side."),
- ("Codex for repositories","OpenAI Codex is a coding agent that can work on tasks in your repository — implementing features, fixing bugs and proposing changes for review."),
+ ("Codex for repositories","OpenAI Codex is a coding agent that can work on tasks in your repository — implementing features, fixing bugs and proposing changes for review. It is included across ChatGPT plans, with limited access on the free tier."),
  ("Prototype in HTML5 first","A single HTML file with canvas is the fastest loop: generate, open in a browser, tweak."),
  ("Keep a design doc","Paste a short design doc at the start of new sessions so the model keeps context."),
  ("Review everything","Run and read the code; AI output can contain bugs or outdated APIs.")],["chatgpt","openai-codex","github-copilot"])}
@@ -85,7 +86,7 @@ def page(path,title,desc,body,ld=None,depth=0):
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{canon}">
 <meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website"><meta property="og:url" content="{canon}">
 <link rel="stylesheet" href="{pre}style.css">{ldj}</head><body><header><nav><a class="logo" href="{pre}index.html">🧱 {SITE_NAME}</a>{nav}</nav></header>
-<main>{body}</main><footer>{SITE_NAME} · {TAGLINE}<br>Independent directory. Names and trademarks belong to their owners. · <a href="{pre}llms.txt">llms.txt</a> · <a href="{pre}sitemap.xml">sitemap</a></footer></body></html>"""
+<main>{body}</main><footer>{SITE_NAME} · {TAGLINE}<br>Independent directory. Names and trademarks belong to their owners. Last verified: {LAST_VERIFIED}. · <a href="{pre}llms.txt">llms.txt</a> · <a href="{pre}sitemap.xml">sitemap</a></footer></body></html>"""
     p=OUT/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(s);URLS.append(canon)
 def card(t,pre=""):
     n,ic,c=CATS[t["category"]]
@@ -126,7 +127,7 @@ $("list").innerHTML=L.map(t=>t.html).join("");$("cnt").textContent=L.length+" to
         cmp=[(a,b) for a,b in COMPARE if t["slug"] in (a,b)]
         body=f'''<p><a href="../categories/{t["category"]}.html">{i} {n}</a></p><h1>{E(t["name"])}</h1><p style="font-size:1.15rem">{E(t["blurb"])}</p>
 <table><tr><th>Made by</th><td>{E(t["maker"])}</td></tr><tr><th>Skill level</th><td>{SK[t["skill"]]}</td></tr><tr><th>Price</th><td>{t["price"]}</td></tr><tr><th>License</th><td>{t["license"]}</td></tr><tr><th>Platforms</th><td>{", ".join(t["platforms"])}</td></tr></table>
-<p><a class="btn" href="{t["url"]}" rel="noopener">Official site ↗</a></p>{"".join(f'<p>⚔️ <a href="../compare/{a}-vs-{b}.html">{BY[a]["name"]} vs {BY[b]["name"]}</a></p>' for a,b in cmp)}{SPON}<h2>Related</h2><div class="grid">{"".join(card(x,"../") for x in rel)}</div>'''
+{f'<p class="box">💡 {E(t["note"])}</p>' if t.get("note") else ""}<p class="mut">Last verified: {LAST_VERIFIED}</p><p><a class="btn" href="{t["url"]}" rel="noopener">Official site ↗</a></p>{"".join(f'<p>⚔️ <a href="../compare/{a}-vs-{b}.html">{BY[a]["name"]} vs {BY[b]["name"]}</a></p>' for a,b in cmp)}{SPON}<h2>Related</h2><div class="grid">{"".join(card(x,"../") for x in rel)}</div>'''
         page(f"tools/{t['slug']}.html",f"{t['name']} for game development — {SITE_NAME}",f"{t['name']} by {t['maker']}: {t['blurb']}"[:158],body,
              {"@context":"https://schema.org","@type":"SoftwareApplication","name":t["name"],"author":{"@type":"Organization","name":t["maker"]},"url":t["url"],"applicationCategory":n,"operatingSystem":", ".join(t["platforms"]),"description":t["blurb"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"} if t["price"]!="paid" else None},1)
     rows=[]
@@ -134,7 +135,7 @@ $("list").innerHTML=L.map(t=>t.html).join("");$("cnt").textContent=L.length+" to
         A,B=BY[a],BY[b];f=lambda k,v=lambda x:x:"".join(f"<td>{E(str(v(X[k])))}</td>" for X in (A,B))
         body=f'''<h1>{E(A["name"])} vs {E(B["name"])}</h1><p class="mut">A quick side-by-side to help you choose. Both are solid — the right pick depends on your goals.</p>
 <table><tr><th></th><th>{E(A["name"])}</th><th>{E(B["name"])}</th></tr><tr><th>Maker</th>{f("maker")}</tr><tr><th>Summary</th>{f("blurb")}</tr><tr><th>Skill</th>{f("skill")}</tr><tr><th>Price</th>{f("price")}</tr><tr><th>License</th>{f("license")}</tr><tr><th>Platforms</th>{f("platforms",", ".join)}</tr></table>
-<h2>Quick take</h2><p>Choose <b>{E(A["name"])}</b> if {"you want free, open-source tooling" if A["license"]=="open-source" else "its ecosystem fits your project"}; choose <b>{E(B["name"])}</b> if {"you want free, open-source tooling" if B["license"]=="open-source" else "its ecosystem fits your project"}. Beginners should favour the tool marked 🟢. Always check the official sites for current pricing.</p>
+<h2>Quick take</h2><p>Choose <b>{E(A["name"])}</b> if {"you want free, open-source tooling" if A["license"]=="open-source" else "its ecosystem fits your project"}; choose <b>{E(B["name"])}</b> if {"you want free, open-source tooling" if B["license"]=="open-source" else "its ecosystem fits your project"}. Beginners should favour the tool marked 🟢. Always check the official sites for current pricing.</p>{"".join(f'<p class="mut">💡 <b>{E(X["name"])}:</b> {E(X["note"])}</p>' for X in (A,B) if X.get("note"))}<p class="mut">Last verified: {LAST_VERIFIED}</p>
 <p><a href="../tools/{a}.html">{E(A["name"])} details</a> · <a href="../tools/{b}.html">{E(B["name"])} details</a></p>{SPON}'''
         page(f"compare/{a}-vs-{b}.html",f"{A['name']} vs {B['name']} for making games — {SITE_NAME}",f"Compare {A['name']} and {B['name']}: price, license, skill level and platforms.",body,None,1)
         rows.append(f'<li><a href="compare/{a}-vs-{b}.html">{E(A["name"])} vs {E(B["name"])}</a></li>')
@@ -156,7 +157,7 @@ $("list").innerHTML=L.map(t=>t.html).join("");$("cnt").textContent=L.length+" to
     page("about.html",f"About — {SITE_NAME}",f"About {SITE_NAME}.",f'<h1>About</h1><p>{SITE_NAME} is an independent directory of every way to make games — from prompting an AI to shipping with Unreal. Listings are written in our own words and link to official sites. Prices and features change; always confirm on the official site.</p><p>Updated regularly. Last build: {TODAY}.</p>{SPON}{NEWS}')
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n")
     (OUT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"<url><loc>{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in URLS)+"</urlset>\n")
-    L=[f"# {SITE_NAME}",f"> {TAGLINE} Directory of {len(tools)} tools for making games, organized by category and skill level.","",f"Full data: {BASE_URL}/data/tools.json",""]
+    L=[f"# {SITE_NAME}",f"> {TAGLINE} Directory of {len(tools)} tools for making games, organized by category and skill level.","",f"Full data: {BASE_URL}/data/tools.json",f"Last verified: {LAST_VERIFIED}",""]
     for k,(n,_,_) in CATS.items():
         L+=[f"## {n}"]+[f"- [{t['name']}]({BASE_URL}/tools/{t['slug']}.html): {t['blurb']} ({t['skill']}, {t['price']}, {t['license']})" for t in tools if t["category"]==k]+[""]
     L+=["## Paths"]+[f"- [{t}]({BASE_URL}/paths/{s}.html)" for s,t,_,_ in PATHS]+["","## Comparisons"]+[f"- {BASE_URL}/compare/{a}-vs-{b}.html" for a,b in COMPARE]

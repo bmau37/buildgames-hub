@@ -2,6 +2,7 @@
 > Every way to build a game — from AI prompts to Unreal. Directory of 67 tools for making games, organized by category and skill level.
 
 Full data: https://bmau37.github.io/buildgames-hub/data/tools.json
+Last verified: 2026-10-13
 
 ## AI & Vibe Coding
 - [ChatGPT](https://bmau37.github.io/buildgames-hub/tools/chatgpt.html): General-purpose AI assistant that can brainstorm game ideas, write and debug code, and draft dialogue or design docs. (beginner, freemium, proprietary)
@@ -9,7 +10,7 @@ Full data: https://bmau37.github.io/buildgames-hub/data/tools.json
 - [Grok](https://bmau37.github.io/buildgames-hub/tools/grok.html): xAI's assistant for brainstorming, coding help and quick prototype generation. (beginner, freemium, proprietary)
 - [Gemini](https://bmau37.github.io/buildgames-hub/tools/gemini.html): Google's multimodal assistant; Canvas mode can build and preview simple web games. (beginner, freemium, proprietary)
 - [Claude Code](https://bmau37.github.io/buildgames-hub/tools/claude-code.html): Agentic coding tool in your terminal that edits whole game projects, runs builds and fixes errors. (intermediate, paid, proprietary)
-- [OpenAI Codex](https://bmau37.github.io/buildgames-hub/tools/openai-codex.html): OpenAI's coding agent for writing, refactoring and testing game code across a repository. (intermediate, paid, proprietary)
+- [OpenAI Codex](https://bmau37.github.io/buildgames-hub/tools/openai-codex.html): OpenAI's coding agent for writing, refactoring and testing game code across a repository. (intermediate, freemium, proprietary)
 - [Cursor](https://bmau37.github.io/buildgames-hub/tools/cursor.html): AI-first code editor popular for 'vibe coding' games in Godot, Unity or JavaScript. (intermediate, freemium, proprietary)
 - [GitHub Copilot](https://bmau37.github.io/buildgames-hub/tools/github-copilot.html): AI pair programmer inside VS Code and other editors for game scripting. (intermediate, freemium, proprietary)
 - [Meshy](https://bmau37.github.io/buildgames-hub/tools/meshy.html): Generates textured 3D models from text or images, handy for placeholder or stylized game assets. (beginner, freemium, proprietary)
@@ -21,7 +22,7 @@ Full data: https://bmau37.github.io/buildgames-hub/data/tools.json
 ## Game Engines
 - [Godot Engine](https://bmau37.github.io/buildgames-hub/tools/godot-engine.html): Free, MIT-licensed 2D/3D engine with a lightweight editor and Python-like GDScript. (beginner, free, open-source)
 - [Unity](https://bmau37.github.io/buildgames-hub/tools/unity.html): Widely used C# engine for mobile, PC, console and XR games, with a huge asset store. (intermediate, freemium, proprietary)
-- [Unreal Engine](https://bmau37.github.io/buildgames-hub/tools/unreal-engine.html): High-end 3D engine with Blueprints visual scripting and C++; royalty applies above a revenue threshold. (advanced, freemium, proprietary)
+- [Unreal Engine](https://bmau37.github.io/buildgames-hub/tools/unreal-engine.html): High-end 3D engine with Blueprints visual scripting and C++. Free to start; games pay a 5% royalty only on lifetime gross revenue above US$1M per product. (advanced, freemium, proprietary)
 - [GameMaker](https://bmau37.github.io/buildgames-hub/tools/gamemaker.html): Classic 2D engine behind many indie hits, free for non-commercial use. (beginner, freemium, proprietary)
 - [Defold](https://bmau37.github.io/buildgames-hub/tools/defold.html): Free, lightweight Lua engine great for small, fast mobile and web games. (intermediate, free, open-source)
 - [Bevy](https://bmau37.github.io/buildgames-hub/tools/bevy.html): Data-driven open-source game engine written in Rust using an ECS architecture. (advanced, free, open-source)
@@ -34,7 +35,7 @@ Full data: https://bmau37.github.io/buildgames-hub/data/tools.json
 - [RPG Maker MZ](https://bmau37.github.io/buildgames-hub/tools/rpg-maker-mz.html): Make classic-style JRPGs with map, database and event editors. (beginner, paid, proprietary)
 - [Bitsy](https://bmau37.github.io/buildgames-hub/tools/bitsy.html): Tiny browser editor for small pixel-art narrative games. (beginner, free, free)
 - [Twine](https://bmau37.github.io/buildgames-hub/tools/twine.html): Open-source tool for interactive, nonlinear text stories. (beginner, free, open-source)
-- [Ren'Py](https://bmau37.github.io/buildgames-hub/tools/ren-py.html): Free visual novel engine scripted in a simple Python-based language. (beginner, free, open-source)
+- [Ren'Py](https://bmau37.github.io/buildgames-hub/tools/ren-py.html): Free, open-source visual novel engine (free for commercial use) that exports to desktop, mobile and web. (beginner, free, open-source)
 - [LÖVE](https://bmau37.github.io/buildgames-hub/tools/l-ve.html): Minimal open-source Lua framework for 2D games. (intermediate, free, open-source)
 - [MonoGame](https://bmau37.github.io/buildgames-hub/tools/monogame.html): Open-source C# framework, the spiritual successor to XNA. (advanced, free, open-source)
 - [Stride](https://bmau37.github.io/buildgames-hub/tools/stride.html): Open-source C# 3D engine with a full editor. (advanced, free, open-source)
@@ -54,7 +55,7 @@ Full data: https://bmau37.github.io/buildgames-hub/data/tools.json
 - [LMMS](https://bmau37.github.io/buildgames-hub/tools/lmms.html): Open-source music production app for game soundtracks. (intermediate, free, open-source)
 - [Bfxr / jsfxr](https://bmau37.github.io/buildgames-hub/tools/bfxr-jsfxr.html): Generate retro sound effects (jumps, coins, explosions) in one click. (beginner, free, open-source)
 - [FMOD](https://bmau37.github.io/buildgames-hub/tools/fmod.html): Adaptive audio middleware integrated with Unity and Unreal; free for small indies. (advanced, freemium, proprietary)
-- [Bosca Ceoil Blue](https://bmau37.github.io/buildgames-hub/tools/bosca-ceoil-blue.html): Simple, open-source music maker made for game jam soundtracks. (beginner, free, open-source)
+- [Bosca Ceoil Blue](https://bmau37.github.io/buildgames-hub/tools/bosca-ceoil-blue.html): Open-source remake of the classic Bosca Ceoil — a simple music maker loved for game jam soundtracks. (beginner, free, open-source)
 
 ## No-code & Kids
 - [Scratch](https://bmau37.github.io/buildgames-hub/tools/scratch.html): Free block-based coding from MIT where kids make and share games and stories. (beginner, free, open-source)
@@ -72,9 +73,9 @@ Full data: https://bmau37.github.io/buildgames-hub/data/tools.json
 
 ## Publishing
 - [itch.io](https://bmau37.github.io/buildgames-hub/tools/itch-io.html): Open indie storefront: upload games free, set your own revenue share, join game jams. (beginner, free, proprietary)
-- [Steamworks](https://bmau37.github.io/buildgames-hub/tools/steamworks.html): Publish on Steam for a per-game app fee (US$100, recoupable after sales). (intermediate, paid, proprietary)
+- [Steamworks](https://bmau37.github.io/buildgames-hub/tools/steamworks.html): Publish on Steam for a US$100 Steam Direct fee per game, recouped once the game earns US$1,000 in adjusted gross revenue. (intermediate, paid, proprietary)
 - [Google Play Console](https://bmau37.github.io/buildgames-hub/tools/google-play-console.html): Publish Android games for a one-time US$25 developer registration fee. (intermediate, paid, proprietary)
-- [Apple App Store](https://bmau37.github.io/buildgames-hub/tools/apple-app-store.html): Ship iOS games via the Apple Developer Program (US$99/year). (advanced, paid, proprietary)
+- [Apple App Store](https://bmau37.github.io/buildgames-hub/tools/apple-app-store.html): Ship iOS games via the Apple Developer Program (US$99 per membership year). (advanced, paid, proprietary)
 - [GitHub Pages](https://bmau37.github.io/buildgames-hub/tools/github-pages.html): Free static hosting — perfect for HTML5 games and jam builds. (intermediate, free, proprietary)
 - [Newgrounds](https://bmau37.github.io/buildgames-hub/tools/newgrounds.html): Long-running community portal for browser games and animation. (beginner, free, proprietary)
 
