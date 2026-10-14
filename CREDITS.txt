@@ -1,0 +1,5 @@
+BuildGames Hub credits
+
+Fonts: Inter (The Inter Project Authors) and Space Grotesk (Florian Karsten), SIL Open Font License 1.1 — see fonts/OFL-*.txt
+Icons: Lucide (https://lucide.dev), ISC License — see icons-LICENSE.txt
+Illustrations, logo and OG images: original work made for this site.

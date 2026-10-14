@@ -93,6 +93,10 @@ Last verified: 2026-10-13
 - [Blender to Godot 3D pipeline](https://bmau37.github.io/buildgames-hub/paths/blender-to-godot-3d.html)
 - [Kids game-making](https://bmau37.github.io/buildgames-hub/paths/kids-game-making.html)
 
+## Guides
+- [Build games with Claude](https://bmau37.github.io/buildgames-hub/guides/claude.html)
+- [Build games with ChatGPT & Codex](https://bmau37.github.io/buildgames-hub/guides/chatgpt.html)
+
 ## Comparisons
 - https://bmau37.github.io/buildgames-hub/compare/godot-engine-vs-unity.html
 - https://bmau37.github.io/buildgames-hub/compare/unity-vs-unreal-engine.html
@@ -106,3 +110,6 @@ Last verified: 2026-10-13
 - https://bmau37.github.io/buildgames-hub/compare/phaser-vs-defold.html
 - https://bmau37.github.io/buildgames-hub/compare/itch-io-vs-steamworks.html
 - https://bmau37.github.io/buildgames-hub/compare/scratch-vs-microsoft-makecode-arcade.html
+
+## Showcase
+- https://bmau37.github.io/buildgames-hub/showcase.html

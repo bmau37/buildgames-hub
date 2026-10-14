@@ -1,0 +1,42 @@
+CATS={"ai":("AI & Vibe Coding","sparkles","#a855f7"),"engine":("Game Engines","cog","#3b82f6"),"art":("3D & Art","palette","#f97316"),
+"audio":("Audio & Music","music","#14b8a6"),"kids":("No-code & Kids","blocks","#eab308"),"vr":("VR / Quest","glasses","#ec4899"),
+"publish":("Publishing","rocket","#22c55e"),"learn":("Learning","book-open","#64748b")}
+SK={"beginner":"Beginner","intermediate":"Intermediate","advanced":"Advanced"}
+COMPARE=[("godot-engine","unity"),("unity","unreal-engine"),("godot-engine","unreal-engine"),("gamemaker","godot-engine"),
+("construct-3","gdevelop"),("claude-code","cursor"),("claude","chatgpt"),("blender","adobe-substance-3d-painter"),
+("roblox-studio","uefn-unreal-editor-for-fortnite"),("phaser","defold"),("itch-io","steamworks"),("scratch","microsoft-makecode-arcade")]
+PATHS=[("first-game-this-weekend","Make your first game this weekend","beginner",
+ [("Pick a tiny idea","One mechanic, one screen. Think Pong, Flappy, or a 3-room text adventure.",["twine","bitsy"]),
+  ("Choose a friendly tool","Godot or GDevelop for 2D; PICO-8 if you love limits.",["godot-engine","gdevelop","pico-8"]),
+  ("Grab free assets","Use CC0 art and generated sound effects so you can focus on play.",["kenney-assets","bfxr-jsfxr"]),
+  ("Ask AI when stuck","Paste errors into an assistant and ask it to explain, not just fix.",["claude","chatgpt"]),
+  ("Ship it","Upload a web build to itch.io (free) and share the link.",["itch-io"])]),
+("vibe-coded-to-steam","From vibe-coded to Steam","intermediate",
+ [("Prototype with an AI agent","Describe the core loop and let an agent scaffold a playable HTML5 or Godot prototype.",["claude-code","openai-codex","cursor"]),
+  ("Playtest on the web","Host jam builds for friends to try.",["github-pages","itch-io"]),
+  ("Move to a real engine","Rebuild or port into an engine with export targets and proper tooling.",["godot-engine","unity"]),
+  ("Replace placeholder assets","Swap AI placeholders for consistent art and audio; check licenses.",["aseprite","blender","fmod"]),
+  ("Publish","Pay the US$100 Steam Direct fee and set up your store page early to gather wishlists.",["steamworks"])]),
+("blender-to-godot-3d","Blender to Godot 3D pipeline","intermediate",
+ [("Model & UV","Model low-poly assets and unwrap them.",["blender"]),
+  ("Texture","Paint PBR textures or use simple palettes.",["adobe-substance-3d-painter","krita"]),
+  ("Export glTF","Export .glb from Blender — Godot imports it natively.",["blender"]),
+  ("Build the scene","Import, add collisions and scripts in GDScript.",["godot-engine"]),
+  ("Learn more","Follow Godot-focused courses.",["gdquest"])]),
+("kids-game-making","Kids game-making","beginner",
+ [("Start with blocks","Drag-and-drop coding with instant results.",["scratch","microsoft-makecode-arcade"]),
+  ("Level design on console","Build and share levels.",["super-mario-maker-2","game-builder-garage"]),
+  ("Worlds with friends","Create in platforms kids already play (with parental controls).",["roblox-studio","minecraft-education"]),
+  ("Graduate to text code","Move to a real engine when ready.",["godot-engine"])])]
+GUIDES={"claude":("Build games with Claude","claude",[
+ ("Chat + Artifacts","In the Claude app, ask for a small browser game (e.g. 'a single-file HTML canvas Snake game') and Claude can render it as a live Artifact you can play and iterate on."),
+ ("Claude Code for real projects","Claude Code runs in your terminal, reads your project, edits multiple files and runs commands — useful for Godot, Phaser or Unity projects under version control. It requires a paid Claude plan (Pro and up) or API credits."),
+ ("Iterate in small steps","Ask for one feature at a time, playtest, then describe what felt wrong. Keep the game in git so you can roll back."),
+ ("Ask for explanations","Have Claude explain generated code so you can maintain it yourself."),
+ ("Check your assets","AI can write code quickly; art, music and fonts still need clear licenses before you ship.")],["claude","claude-code","cursor"]),
+"chatgpt":("Build games with ChatGPT & Codex","chatgpt",[
+ ("ChatGPT for design & code","Use ChatGPT to brainstorm mechanics, write scripts and debug error messages; Canvas lets you edit and preview code side by side."),
+ ("Codex for repositories","OpenAI Codex is a coding agent that can work on tasks in your repository — implementing features, fixing bugs and proposing changes for review. It is included across ChatGPT plans, with limited access on the free tier."),
+ ("Prototype in HTML5 first","A single HTML file with canvas is the fastest loop: generate, open in a browser, tweak."),
+ ("Keep a design doc","Paste a short design doc at the start of new sessions so the model keeps context."),
+ ("Review everything","Run and read the code; AI output can contain bugs or outdated APIs.")],["chatgpt","openai-codex","github-copilot"])}
