@@ -87,6 +87,26 @@ Last verified: 2026-10-13
 - [Global Game Jam](https://bmau37.github.io/buildgames-hub/tools/global-game-jam.html): Annual worldwide jam — make a game in 48 hours with others. (beginner, free, free, ages: Teens 13–17/Grown-ups 18+)
 - [CS50's Intro to Game Development](https://bmau37.github.io/buildgames-hub/tools/cs50-s-intro-to-game-development.html): Free Harvard course building classic games in LÖVE and Unity. (intermediate, free, free, ages: Teens 13–17/Grown-ups 18+)
 
+## Make a game (Pathfinder)
+- [Pathfinder](https://bmau37.github.io/buildgames-hub/pathfinder/): describe a game in plain words; get an age-aware tool stack, steps with time estimates, a tutorial, videos and an AI starter prompt. Templates: 2D platformer, Falling-block / match puzzle, Endless runner, Top-down shooter / arena survivor, RPG / adventure, Visual novel / story game, Idle / clicker, Card / deckbuilder, Tower defense, Racing, Horror, First-person shooter, Survival crafting, City builder / strategy, Farming / cozy sim, Rhythm / music game, Fighting game, Party / local multiplayer, Roblox obby, Fortnite island (UEFN), VR game for Quest, Mobile casual, Text adventure / Twine, Educational / quiz, Physics sandbox / puzzle, AI vibe-coded single-file HTML game, 3D adventure / platformer, Game for or with a kid
+
+## Tutorials
+- [Make a single-file HTML game with Claude, ChatGPT or Grok](https://bmau37.github.io/buildgames-hub/tutorials/single-file-html-game-with-ai.html): Describe a game, get one HTML file you can open in any browser, then improve it version by version — the approach behind Junktris. (2–4 hours for a first playable)
+- [Your first Godot 2D platformer](https://bmau37.github.io/buildgames-hub/tutorials/godot-2d-platformer.html): Build a running, jumping character, a level made of tiles and a goal flag in Godot 4 — free and open source. (3–5 hours)
+- [Scratch: a first game for kids](https://bmau37.github.io/buildgames-hub/tutorials/scratch-first-game-kids.html): Make a 'catch the falling apples' game in Scratch with score and a timer — no typing, just blocks. (45–90 minutes)
+- [Build a Roblox obby with checkpoints](https://bmau37.github.io/buildgames-hub/tutorials/roblox-obby.html): Make an obstacle course in Roblox Studio with kill bricks, moving parts and checkpoints that remember your progress. (2–3 hours)
+- [Blender low-poly asset to Godot](https://bmau37.github.io/buildgames-hub/tutorials/blender-low-poly-to-godot.html): Model a simple low-poly tree, colour it, export it as glTF and drop it into a Godot 3D scene. (1–2 hours)
+- [Unity: your first 3D game (roll-a-ball)](https://bmau37.github.io/buildgames-hub/tutorials/unity-first-3d-game.html): A ball you roll around a board collecting pickups — the classic first Unity project, using the Input System. (2–3 hours)
+- [Pixel art basics with Aseprite or Piskel](https://bmau37.github.io/buildgames-hub/tutorials/pixel-art-basics.html): Draw and animate a 16×16 game character with a limited palette, then export a sprite sheet for any engine. (1–2 hours)
+- [Free game sound with jsfxr and Bosca Ceoil](https://bmau37.github.io/buildgames-hub/tutorials/free-game-sound.html): Make jump, coin and explosion effects in seconds, then compose a short loop of background music — all free. (1 hour)
+- [Publish your game on itch.io](https://bmau37.github.io/buildgames-hub/tutorials/publish-on-itch.html): Turn your build into a public game page that people can play in the browser or download — free. (30–60 minutes)
+- [Make a story game with Twine](https://bmau37.github.io/buildgames-hub/tutorials/twine-story-game.html): Write a branching interactive story with choices, a remembered item and multiple endings — in your browser. (1–2 hours)
+- [PICO-8: your first cart](https://bmau37.github.io/buildgames-hub/tutorials/pico-8-first-cart.html): Draw a sprite, move it with the arrow keys, add a collectible and a score inside the PICO-8 fantasy console. (1–2 hours)
+- [Make a game with your kid](https://bmau37.github.io/buildgames-hub/tutorials/make-a-game-with-your-kid.html): A parent's playbook: paper prototypes, the right first tool for each age, short sessions and how to keep it their game. (Several 30–45 minute sessions)
+
+## Videos
+- [Video library](https://bmau37.github.io/buildgames-hub/videos/): 57 verified YouTube tutorials from official channels and known teachers, tagged by tool, game type and age.
+
 ## By age
 - [Kids 6–12](https://bmau37.github.io/buildgames-hub/for-kids/)
 - [Teens 13–17](https://bmau37.github.io/buildgames-hub/for-teens/)
