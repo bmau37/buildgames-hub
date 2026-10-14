@@ -256,13 +256,13 @@ def cluster(pre="../"):return '<div class="cluster" aria-hidden="true">'+"".join
 def herovis(k,pre="../"):
     return f'<div class="hvis">{clay2(CLAYMAP[k],pre,cls="clay2 big")}</div>' if k in CLAYMAP else f'<div class="hvis svgv">{ART[k]}</div>'
 exec(open(ROOT/"_build/teach.py").read(),globals())
+assert not (ROOT/"assets/games").exists(), "No hosted games allowed (Pondborn stays private until Play Store)"
 def build():
     if OUT.exists():shutil.rmtree(OUT)
     OUT.mkdir();(OUT/"style.css").write_text(CSS);(OUT/".nojekyll").write_text("")
     shutil.copytree(ASSETS/"fonts",OUT/"fonts");shutil.copytree(ASSETS/"img",OUT/"img")
     if (ASSETS/"media").exists():shutil.copytree(ASSETS/"media",OUT/"media")
     if (ASSETS/"og").exists():shutil.copytree(ASSETS/"og",OUT/"og")
-    if (ASSETS/"games").exists():shutil.copytree(ASSETS/"games",OUT/"games")
     for f in ("favicon-32.png","apple-touch-icon.png"):
         if (ASSETS/f).exists():shutil.copy(ASSETS/f,OUT/f)
     (OUT/"favicon.svg").write_text(logo(40).replace(' height="40"',''))
