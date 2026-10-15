@@ -140,6 +140,11 @@ Last verified: 2026-10-13
 
 ## Showcase
 - https://bmau37.github.io/buildgames-hub/showcase.html
+## AI game news
+- [AI game news](https://bmau37.github.io/buildgames-hub/news.html): dated notes on AI + games news with source links, a plain takeaway and what to build next.
+- 2026-10-13: [“The single biggest opportunity in AI”](https://bmau37.github.io/buildgames-hub/news.html#alex-finn-ai-games-opportunity) — source: https://x.com/AlexFinn/status/2110231166725095672
+- 2026-10-13: [Xbox stands up XBOX LABS](https://bmau37.github.io/buildgames-hub/news.html#xbox-labs-launch) — source: https://x.com/asha_shar/status/2110083127741702241
+
 ## Start & resources
 - [Start here](https://bmau37.github.io/buildgames-hub/start.html): three simple paths for kids, teens and adults.
 - [Free art](https://bmau37.github.io/buildgames-hub/resources/art.html)

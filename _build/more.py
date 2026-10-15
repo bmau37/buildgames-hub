@@ -139,3 +139,37 @@ def build_more():
 _bt2=build_teach
 def build_teach():
     _bt2();build_more()
+NEWS=sorted(_D("news.json"),key=lambda n:n["date"],reverse=True)
+def _fdate(d):
+    import datetime;x=datetime.date.fromisoformat(d);return x.strftime("%b ")+str(x.day)+x.strftime(", %Y")
+NEWS_CSS="""
+.whynow{position:relative;margin:4rem auto;padding:clamp(1.6rem,4vw,3rem);border-radius:40px;color:#fff;overflow:hidden;background:radial-gradient(60% 80% at 0 0,#7b5cff 0,transparent 70%),radial-gradient(50% 70% at 100% 100%,#e2486b 0,transparent 70%),radial-gradient(40% 60% at 90% 0,#0f8f86 0,transparent 70%),#2a1f5c;box-shadow:0 40px 80px -40px #3b1f9e}
+.whynow h2{font-size:clamp(1.9rem,5vw,3rem);margin:.3rem 0 1rem;color:#fff;-webkit-text-fill-color:#fff;background:none}.whynow .eyebrow{color:#ffd166}
+.wn3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.4rem 0}.wn3>div{background:#ffffff1a;border:1px solid #ffffff2e;border-radius:24px;padding:1.1rem 1.2rem;backdrop-filter:blur(8px)}
+.wn3 b{display:block;font:700 1.15rem "Space Grotesk";margin-bottom:.3rem}.wn3 p{margin:0;color:#f1edff;font-size:.95rem}.wn3 a{color:#fff}
+.whynow blockquote{margin:0;font-size:1.05rem;line-height:1.5;color:#fff}.whynow cite{display:block;margin-top:.5rem;font-style:normal;font-size:.85rem;color:#e6e0ff}.whynow cite a{color:#ffd166}
+.whynow .btn.alt{color:#1b1630}
+.nlist{display:grid;gap:2rem;margin-top:1rem}.nitem{display:grid;grid-template-columns:150px 1fr;gap:1.5rem;background:#fff;border-radius:32px;padding:clamp(1.2rem,3vw,2rem);box-shadow:var(--soft)}
+.nitem time{font:700 1rem "Space Grotesk";color:#5b2fe0}.nitem .tags span{display:inline-block;margin:.4rem .3rem 0 0;padding:.15rem .6rem;border-radius:999px;background:#f1ecfb;font-size:.78rem;font-weight:600}
+.nitem h2{margin:0 0 .6rem;font-size:1.5rem}.nitem blockquote{margin:0 0 .8rem;padding:.9rem 1.1rem;border-left:4px solid #5b3fd9;background:#f6f2ff;border-radius:0 16px 16px 0;font-size:1.1rem}.nitem blockquote cite{display:block;font-style:normal;font-size:.88rem;color:#5e5873;margin-top:.4rem}
+.ntake{background:linear-gradient(120deg,#fff3c9,#ffe0d6);border-radius:20px;padding:.9rem 1.1rem;margin:.8rem 0}.ntake b{color:#7a2e0b}
+.nnext{display:flex;flex-wrap:wrap;gap:.5rem}.nnext a{padding:.5rem .9rem;border-radius:999px;background:#5b3fd9;color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;min-height:40px;display:inline-flex;align-items:center}
+@media (max-width:760px){.wn3{grid-template-columns:1fr}.nitem{grid-template-columns:1fr;gap:.4rem}}
+"""
+def build_news():
+    items="".join(f'''<article class="nitem" id="{n["id"]}"><div><time datetime="{n["date"]}">{_fdate(n["date"])}</time><div class="tags">{"".join(f"<span>{E(t)}</span>" for t in n.get("tags",[]))}</div></div><div><h2>{E(n["title"])}</h2>
+<blockquote><p>“{E(n["quote"])}”</p><cite>— {E(n["who"])} (<a href="{E(n["url"])}" rel="noopener">@{E(n["handle"])} on X</a>), {E(n["role"])}</cite></blockquote>
+<p>{E(n["context"])}{f' <a href="{E(n["link2"][1])}" rel="noopener">{E(n["link2"][0])}</a>.' if n.get("link2") else ""}</p>
+<div class="ntake"><b>Our take:</b> {E(n["takeaway"])}</div><p style="margin:.6rem 0 .4rem;font-weight:700">Build or learn next:</p><div class="nnext">{"".join(f'<a href="{h}">{E(t)}</a>' for t,h in n["next"])}</div></div></article>''' for n in NEWS)
+    page("news.html",f"AI game news — {SITE_NAME}","Dated, plain-language notes on AI and games news, with links to the original posts and what to build or learn next.",
+      f'<div class="phead"><div><span class="eyebrow">{icon("sparkles",14)} AI game news</span><h1>What’s happening in AI + games.</h1><p style="font-size:1.15rem">Short notes, linked to the source, with one plain-language takeaway and what to try next.</p><p class="mut">Quotes are brief and link to the original. Opinions are labeled as opinions.</p></div>{clay2("ai",pre="")}</div><div class="nlist">{items}</div>',
+      {"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":i+1,"url":f"{BASE_URL}/news.html#{n['id']}","name":n["title"]} for i,n in enumerate(NEWS)]},[("AI game news",None)])
+    a,b=NEWS[0],NEWS[1] if len(NEWS)>1 else NEWS[0]
+    band=f'''<section class="wrap"><div class="whynow"><span class="eyebrow">{icon("sparkles",14)} Why now</span><h2>AI + games is having a moment.</h2>
+<div class="wn3"><div><blockquote>“{E(b["quote"])}”</blockquote><cite>— <a href="{E(b["url"])}" rel="noopener">@{E(b["handle"])}</a>, {E(b["role"])}</cite></div><div><blockquote>“{E(a["quote"])}”</blockquote><cite>— <a href="{E(a["url"])}" rel="noopener">@{E(a["handle"])}</a> (opinion)</cite></div><div><b>Your move</b><p>The tools are free or cheap. Make one tiny game this month, and finish it.</p></div></div>
+<p style="display:flex;gap:.6rem;flex-wrap:wrap"><a class="btn" href="pathfinder/">{icon("sparkles",16)} Start a game with AI</a><a class="btn alt" href="news.html">Read AI game news {icon("arrow-right")}</a></p></div></section>'''
+    f=OUT/"index.html";s=f.read_text();s=s.replace('<section class="wrap famband">',band+'<section class="wrap famband">',1);f.write_text(s)
+    (OUT/"style.css").write_text((OUT/"style.css").read_text()+NEWS_CSS)
+_bt3=build_teach
+def build_teach():
+    build_news();_bt3()

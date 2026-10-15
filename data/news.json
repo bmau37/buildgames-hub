@@ -1,0 +1,31 @@
+[
+ {
+  "id": "alex-finn-ai-games-opportunity",
+  "date": "2026-10-13",
+  "title": "“The single biggest opportunity in AI”",
+  "who": "Alex Finn",
+  "handle": "AlexFinn",
+  "role": "founder and AI creator (per his X bio)",
+  "url": "https://x.com/AlexFinn/status/2110231166725095672",
+  "quote": "Gaming is the single biggest opportunity in AI right now",
+  "context": "Posted as a quote of the Xbox Labs announcement. Finn also predicts 2027 will be a “gold rush” for people who build games with AI. That's his opinion, not a measured fact.",
+  "takeaway": "The tools that make a game with AI are already free or cheap, and the people who start now will have shipped something by the time everyone else is still reading about it. The best move is small: one tiny game, finished, this month.",
+  "next": [["Make a single-file HTML game with AI","tutorials/single-file-html-game-with-ai.html"],["Plan your first game on one page","tutorials/plan-your-first-game.html"],["Describe your idea in Pathfinder","pathfinder/?q=a%20small%20game%20made%20with%20AI"]],
+  "tags": ["opinion","ai"]
+ },
+ {
+  "id": "xbox-labs-launch",
+  "date": "2026-10-13",
+  "title": "Xbox stands up XBOX LABS",
+  "who": "Asha",
+  "handle": "asha_shar",
+  "role": "CEO of Xbox (per her X bio)",
+  "url": "https://x.com/asha_shar/status/2110083127741702241",
+  "quote": "Today we're standing up XBOX LABS",
+  "context": "The post links to labs.xbox.com, which describes Xbox Labs in one line: “Explore, experiment, and create what's next in play.” The post shares a note to the team that opens with the history of video games. Beyond that, the site doesn't yet list specific products or details.",
+  "link2": ["Visit labs.xbox.com","https://labs.xbox.com/"],
+  "takeaway": "When a major platform sets up a team to experiment with “what's next in play”, it's a sign that small, experimental games matter. You don't need a studio to experiment. A weekend prototype counts.",
+  "next": [["Start here: your first game in 3 steps","start.html"],["Godot: your first 2D platformer","tutorials/godot-2d-platformer.html"],["Find your path in Pathfinder","pathfinder/"]],
+  "tags": ["industry","xbox"]
+ }
+]
